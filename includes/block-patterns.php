@@ -22,53 +22,24 @@ defined( 'ABSPATH' ) or exit;
  */
 
 function register_block_patterns() {
-    /**
-     * Filters the theme block pattern categories.
-     */
 
-    $block_pattern_categories = [
-        'featured' => [
-            'label' => __( 'Featured', 'artlyris' )
-        ],
-        'footer' => [
-            'label' => __( 'Footers', 'artlyris' )
-        ],
-        'header' => [
-            'label' => __( 'Headers', 'artlyris' )
-        ],
-        'query' => [
-            'label' => __( 'Query', 'artlyris' )
-        ],
-        'pages' => [
-            'label' => __( 'Pages', 'artlyris' )
-        ],
-    ];
 
-    foreach ( $block_pattern_categories as $name => $properties ) {
-        if ( ! WP_Block_Pattern_Categories_Registry::get_instance()->is_registered( $name ) ) {
-            register_block_pattern_category(
-                $name,
-                $properties
+    try {
+
+        $block_patterns = array(
+            // add here (STRING), (STRING), ....
+        );
+
+        foreach ( $block_patterns as $block_pattern ) {
+            $pattern_file = THEME_DIR . 'includes/patterns/' . $block_pattern . '.php';
+
+            register_block_pattern(
+                'ph_THEME-PREFIX' . '/' . $block_pattern,
+                require $pattern_file
             );
         }
-    }
-
-
-    /**
-     * Filters the theme block patterns.
-     */
-
-    $block_patterns = array(
-        // add here (STRING), (STRING), ....
-    );
-
-    foreach ( $block_patterns as $block_pattern ) {
-        $pattern_file = THEME_DIR . 'includes/patterns/' . $block_pattern . '.php';
-
-        register_block_pattern(
-            'ph_THEME-PREFIX' . '/' . $block_pattern,
-            require $pattern_file
-        );
+    } catch ( Exception ) {
+        // do nothing!
     }
 }
 
