@@ -16,17 +16,35 @@
                 }
             ]
         },
+        "layout": {
+            "contentSize": "1000px",
+            "wideSize": "1280px"
+        },
         "typography": {
+            "fluid": true,
             "fontFamilies": [
                 {
-                    "name": "",
+                    "fontFace": [
+                        {
+                            "fontFamily": "Source Serif",
+                            "fontWeight": "200 900",
+                            "fontStyle": "normal",
+                            "src": [
+                                "file:./assets/fonts/SourceSerif4-VariableFont_opsz,wght.ttf"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Source Serif",
+                            "fontWeight": "200 900",
+                            "fontStyle": "italic",
+                            "src": [
+                                "file:./assets/fonts/SSourceSerif4-Italic-VariableFont_opsz,wght.ttf"
+                            ]
+                        }
+                    ],
+                    "name": "primary",
                     "slug": "primary",
-                    "fontFamily": ""
-                },
-                {
-                    "name": "",
-                    "slug": "secondary",
-                    "fontFamily": ""
+                    "fontFamily": "Source Serif, Time New Roman, Times, serif"
                 }
             ]
         }
