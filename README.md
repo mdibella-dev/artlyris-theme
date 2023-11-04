@@ -1,5 +1,5 @@
-# ph_THEME-TITLE
-ph_THEME-DESCRIPTION
+# ARTlyris
+WordPress theme for the website ARTlyris
 
 <br>
 
@@ -13,11 +13,11 @@ gutenberg, block-editor, full-site-editing, translation-ready, responsive
 
 ### Requires at least
 
-* WordPress ph_WORDPRESS-MINIMUM-VERSION
+* WordPress 6
 
 ### Tested up to
 
-* WordPress ph_WORDPRESS-VERSION
+* WordPress 6.3.2
 
 <br>
 
@@ -28,7 +28,7 @@ gutenberg, block-editor, full-site-editing, translation-ready, responsive
 
 ### Previous changes
 
-See [CHANGELOG.md](https://github.com/mdibella-dev/theme-template/blob/main/CHANGELOG.md).
+See [CHANGELOG.md](https://github.com/mdibella-dev/artlyris/blob/main/CHANGELOG.md).
 
 <br>
 

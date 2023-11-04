@@ -3,10 +3,10 @@
  * Additional setup for the block styles.
  *
  * @author  Marco Di Bella
- * @package ph_THEME-PACKAGE
+ * @package ARTlyris
  */
 
-namespace ph_THEME_NAMESPACE;
+namespace artlyris;
 
 
 /** Prevent direct access */

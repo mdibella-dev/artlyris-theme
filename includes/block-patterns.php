@@ -3,10 +3,10 @@
  * Additional setup for the block patterns.
  *
  * @author  Marco Di Bella
- * @package ph_THEME-PACKAGE
+ * @package ARTlyris
  */
 
-namespace ph_THEME_NAMESPACE;
+namespace artlyris;
 
 
 /** Prevent direct access */
@@ -28,19 +28,19 @@ function register_block_patterns() {
 
     $block_pattern_categories = [
         'featured' => [
-            'label' => __( 'Featured', 'ph_THEME-TEXTDOMAIN' )
+            'label' => __( 'Featured', 'artlyris' )
         ],
         'footer' => [
-            'label' => __( 'Footers', 'ph_THEME-TEXTDOMAIN' )
+            'label' => __( 'Footers', 'artlyris' )
         ],
         'header' => [
-            'label' => __( 'Headers', 'ph_THEME-TEXTDOMAIN' )
+            'label' => __( 'Headers', 'artlyris' )
         ],
         'query' => [
-            'label' => __( 'Query', 'ph_THEME-TEXTDOMAIN' )
+            'label' => __( 'Query', 'artlyris' )
         ],
         'pages' => [
-            'label' => __( 'Pages', 'ph_THEME-TEXTDOMAIN' )
+            'label' => __( 'Pages', 'artlyris' )
         ],
     ];
 

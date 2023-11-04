@@ -3,10 +3,10 @@
  * Main functions for setting up the theme.
  *
  * @author  Marco Di Bella
- * @package ph_THEME-PACKAGE
+ * @package ARTlyris
  */
 
-namespace ph_THEME_NAMESPACE;
+namespace artlyris;
 
 
 /** Prevent direct access */
@@ -23,7 +23,7 @@ defined( 'ABSPATH' ) or exit;
 
 function theme_setup() {
     // Enables internationalization.
-    load_theme_textdomain( 'ph_THEME-TEXTDOMAIN', THEME_DIR . 'languages' );
+    load_theme_textdomain( 'artlyris', THEME_DIR . 'languages' );
 
 
     // Adds 'wide' support for the block editor (Gutenberg).
