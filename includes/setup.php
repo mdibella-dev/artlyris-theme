@@ -64,7 +64,7 @@ function theme_scripts() {
         THEME_VERSION
     );
 
-
+/*
     wp_enqueue_script(
         'artlyris-frontend-script',
         THEME_URI . 'assets/build/js/frontend.min.js',          // change path/name if necessary
@@ -74,6 +74,7 @@ function theme_scripts() {
         THEME_VERSION,
         true
     );
+*/
 }
 
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\theme_scripts', 9999 );
