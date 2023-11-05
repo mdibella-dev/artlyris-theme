@@ -26,10 +26,6 @@ function theme_setup() {
     load_theme_textdomain( 'artlyris', THEME_DIR . 'languages' );
 
 
-    // Adds 'wide' support for the block editor (Gutenberg).
-    add_theme_support( 'align-wide' );
-
-
     // Enables responsive embedding of media embeds.
     add_theme_support( 'responsive-embeds' );
 

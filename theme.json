@@ -38,8 +38,7 @@
             "customDuotone": false
         },
         "layout": {
-            "contentSize": "1000px",
-            "wideSize": "1280px"
+            "contentSize": "1000px"
         },
         "useRootPaddingAwareAlignments": true,
         "typography": {
