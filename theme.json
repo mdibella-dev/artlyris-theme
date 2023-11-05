@@ -65,8 +65,31 @@
                             ]
                         }
                     ],
-                    "name": "Source Serif Pro",
-                    "slug": "source-serif-pro"
+                    "name": "Source Serif",
+                    "slug": "source-serif"
+                },
+                {
+                    "fontFamily": "\"Source Sans\", \"Helvetica\", Arial, sans",
+                    "fontFace": [
+                        {
+                            "fontFamily": "Source Sans",
+                            "fontWeight": "200 900",
+                            "fontStyle": "normal",
+                            "src": [
+                                "file:./assets/fonts/SourceSans3-VariableFont_opsz,wght.ttf"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Source Sans",
+                            "fontWeight": "200 900",
+                            "fontStyle": "italic",
+                            "src": [
+                                "file:./assets/fonts/SourceSans3-Italic-VariableFont_opsz,wght.ttf"
+                            ]
+                        }
+                    ],
+                    "name": "Source Sans",
+                    "slug": "source-sans"
                 }
             ]
         }
@@ -78,8 +101,17 @@
         },
         "typography": {
             "fontSize": "1.5rem",
-            "fontFamily": "var(--wp--preset--font-family--source-serif-pro)",
+            "fontFamily": "var(--wp--preset--font-family--source-serif)",
             "lineHeight": "1.5"
+        },
+        "elements": {
+            "heading": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--source-sans)",
+                    "fontWeight": "600",
+                    "lineHeight": "1.3",
+                }
+            }
         }
     }
 }
