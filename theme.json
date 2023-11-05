@@ -69,7 +69,7 @@
                     "slug": "source-serif"
                 },
                 {
-                    "fontFamily": "\"Source Sans\", \"Helvetica\", Arial, sans",
+                    "fontFamily": "\"Source Sans\", Helvetica, Arial, sans-serif",
                     "fontFace": [
                         {
                             "fontFamily": "Source Sans",
