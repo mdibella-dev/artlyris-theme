@@ -17,12 +17,17 @@
                 {
                     "name": "Blue",
                     "slug": "blue",
-                    "color": "#74a0b6"
+                    "color": "#74A0B6"
                 },
                 {
                     "name": "Dark Blue",
                     "slug": "dark-blue",
                     "color": "#28698A"
+                },
+                {
+                    "name": "Pale Blue",
+                    "slug": "pale-blue",
+                    "color": "#C8DAE4"
                 }
             ],
             "gradients": [],
