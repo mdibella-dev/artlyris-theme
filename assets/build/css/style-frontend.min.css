@@ -1,1 +1,1 @@
-html,body{height:100%}html{font-size:18px;margin:0 !important}.site-component-main-content{background:var(--wp--preset--color--pale-blue);border-radius:8px;border-top:10px solid var(--wp--preset--color--dark-blue);max-width:1000px;margin:5rem auto;padding:4rem 80px}
+html,body{height:100%}html{font-size:18px;margin:0 !important}.site-component-main-content{background:var(--wp--preset--color--pale-blue);border-radius:.5rem;border-top:1rem solid var(--wp--preset--color--dark-blue);margin:5rem auto;padding:4rem 80px;box-shadow:0 5px 20px 10px rgba(99,114,130,.25)}
