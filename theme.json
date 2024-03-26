@@ -45,50 +45,65 @@
             "fluid": true,
             "fontFamilies": [
                 {
-                    "fontFamily": "\"Source Serif\", \"Time New Roman\", Times, serif",
+                    "fontFamily": "\"Cinzel\", \"Time New Roman\", Times, serif",
                     "fontFace": [
                         {
-                            "fontFamily": "Source Serif",
-                            "fontWeight": "200 900",
+                            "fontFamily": "Cinzel",
+                            "fontWeight": "300 900",
                             "fontStyle": "normal",
                             "src": [
-                                "file:./assets/fonts/SourceSerif4-VariableFont_opsz,wght.ttf"
-                            ]
-                        },
-                        {
-                            "fontFamily": "Source Serif",
-                            "fontWeight": "200 900",
-                            "fontStyle": "italic",
-                            "src": [
-                                "file:./assets/fonts/SourceSerif4-Italic-VariableFont_opsz,wght.ttf"
+                                "file:./assets/fonts/Cinzel-VariableFont_wght.ttf"
                             ]
                         }
                     ],
-                    "name": "Source Serif",
-                    "slug": "source-serif"
+                    "name": "Cinzel",
+                    "slug": "cinzel"
                 },
                 {
-                    "fontFamily": "\"Source Sans\", Helvetica, Arial, sans-serif",
+                    "fontFamily": "\"Cormorant\", \"Time New Roman\", Times, serif",
                     "fontFace": [
                         {
-                            "fontFamily": "Source Sans",
-                            "fontWeight": "200 900",
+                            "fontFamily": "Cormorant",
+                            "fontWeight": "300 700",
                             "fontStyle": "normal",
                             "src": [
-                                "file:./assets/fonts/SourceSans3-VariableFont_opsz,wght.ttf"
+                                "file:./assets/fonts/Cormorant-VariableFont_wght.ttf"
                             ]
                         },
                         {
-                            "fontFamily": "Source Sans",
-                            "fontWeight": "200 900",
+                            "fontFamily": "Cormorant",
+                            "fontWeight": "300 800",
                             "fontStyle": "italic",
                             "src": [
-                                "file:./assets/fonts/SourceSans3-Italic-VariableFont_opsz,wght.ttf"
+                                "file:./assets/fonts/Cormorant-Italic-VariableFont_wght.ttf"
                             ]
                         }
                     ],
-                    "name": "Source Sans",
-                    "slug": "source-sans"
+                    "name": "Cormorant",
+                    "slug": "cormorant"
+                },
+                {
+                    "fontFamily": "\"Open Sans\", Helvetica, Arial, sans-serif",
+                    "fontFace": [
+                        {
+                            "fontFamily": "Open Sans",
+                            "fontWeight": "300 800",
+                            "fontStyle": "normal",
+                            "src": [
+                                "file:./assets/fonts/OpenSans-VariableFont_wdth,wght.ttf"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Open Sans",
+                            "fontWeight": "300 800",
+                            "fontStyle": "italic",
+                            "src": [
+                                "file:./assets/fonts/OpenSans-Italic-VariableFont_wdth,wght.ttf"
+                            ]
+                        }
+                    ],
+                    "name": "Open Sans",
+                    "slug": "open-sans"
                 }
             ],
             "fontSizes": [
@@ -138,14 +153,14 @@
         },
         "typography": {
             "fontSize": "1.5rem",
-            "fontFamily": "var(--wp--preset--font-family--source-serif)",
+            "fontFamily": "var(--wp--preset--font-family--cormorant)",
             "fontSize": "var(--wp--preset--font-size--medium)",
             "lineHeight": "1.5"
         },
         "elements": {
             "heading": {
                 "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--source-sans)",
+                    "fontFamily": "var(--wp--preset--font-family--cinzel)",
                     "fontSize": "var(--wp--preset--font-size--large)",
                     "fontWeight": "600",
                     "lineHeight": "1.3"
