@@ -12,7 +12,7 @@
                 {
                     "name": "White",
                     "slug": "white",
-                    "color": "#ffffff"
+                    "color": "#FFFFFF"
                 },
                 {
                     "name": "Blue",
@@ -28,7 +28,13 @@
                     "name": "Pale Blue",
                     "slug": "pale-blue",
                     "color": "#C8DAE4"
+                },
+                {
+                    "name": "Pale Gray",
+                    "slug": "pale-gray",
+                    "color": "#DCE2E1"
                 }
+
             ],
             "gradients": [],
             "duotone": [],
@@ -39,6 +45,45 @@
         },
         "layout": {
             "contentSize": "1000px"
+        },
+        "spacing": {
+            "margin": true,
+            "padding": true,
+            "spacingScale": {
+                "steps": 0
+            },
+            "spacingSizes": [
+                {
+                    "size": "clamp(1.5rem, 5vw, 2rem)",
+                    "slug": "30",
+                    "name": "30"
+                },
+                {
+                    "size": "clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem)",
+                    "slug": "40",
+                    "name": "40"
+                },
+                {
+                    "size": "clamp(2.5rem, 8vw, 4.5rem)",
+                    "slug": "50",
+                    "name": "50"
+                },
+                {
+                    "size": "clamp(3.75rem, 10vw, 7rem)",
+                    "slug": "60",
+                    "name": "60"
+                },
+                {
+                    "size": "clamp(5rem, 5.25rem + ((1vw - 0.48rem) * 9.096), 8rem)",
+                    "slug": "70",
+                    "name": "70"
+                },
+                {
+                    "size": "clamp(7rem, 14vw, 11rem)",
+                    "slug": "80",
+                    "name": "80"
+                }
+            ]
         },
         "useRootPaddingAwareAlignments": true,
         "typography": {
@@ -143,12 +188,18 @@
                     "slug": "x-large",
                     "name": "X-large"
                 }
-            ]
+            ],
+            "fontWeight": true,
+            "fontStyle": true,
+            "letterSpacing": true,
+            "textTransform": true,
+            "textDecoration": false,
+            "dropCap": false
         }
     },
     "styles": {
         "color": {
-            "background": "var(--wp--preset--color--blue)",
+            "background": "var(--wp--preset--color--pale-gray)",
             "text": "var(--wp--preset--color--dark-blue)"
         },
         "typography": {
@@ -156,6 +207,14 @@
             "fontFamily": "var(--wp--preset--font-family--cormorant)",
             "fontSize": "var(--wp--preset--font-size--medium)",
             "lineHeight": "1.5"
+        },
+        "spacing": {
+            "padding": {
+                "top": "0",
+                "right": "var(--wp--preset--spacing--40)",
+                "bottom": "0",
+                "left": "var(--wp--preset--spacing--40)"
+            }
         },
         "elements": {
             "heading": {

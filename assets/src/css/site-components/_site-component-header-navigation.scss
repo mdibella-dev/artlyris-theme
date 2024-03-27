@@ -1,0 +1,41 @@
+/**
+ * Site component: header-navigation
+ *
+ * @author  Marco Di Bella
+ * @package ARTlyris
+ */
+
+
+
+.site-component-header-navigation {
+}
+
+
+.site-component-header-navigation-item-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 0;
+    list-style: none;
+    padding-left: 0;
+}
+
+
+.site-component-header-navigation-item {
+    padding: 1px .75rem;
+    border-right: 1px solid #6a5921;
+    line-height: 0;
+
+    &:last-of-type {
+        border-right: unset;
+    }
+}
+
+
+.site-component-header-navigation-item__content {
+    font-family: var(--wp--preset--font-family--open-sans);
+    font-size: .75rem;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
