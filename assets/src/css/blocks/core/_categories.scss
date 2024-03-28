@@ -14,8 +14,8 @@
     flex-direction: column;
 
 
-    & .cat-item,
-    & .cat-item a {
+    .cat-item,
+    .cat-item a {
 
         // for development purpose
         font-family: var(--wp--preset--font-family--open-sans);
