@@ -23,7 +23,7 @@
 
 .site-component-header-navigation-item {
     padding: 1px .75rem;
-    border-right: 1px solid #6a5921;
+    border-right: 1px solid var(--wp--preset--color--dark-blue);
     line-height: 0;
 
     &:last-of-type {
