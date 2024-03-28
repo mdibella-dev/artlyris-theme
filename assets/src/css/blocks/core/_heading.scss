@@ -1,0 +1,25 @@
+/**
+ * Block: core/heading
+ *
+ * @author  Marco Di Bella
+ * @package ARTlyris
+ */
+
+
+
+/**
+ * .is-style-sidebar-tool
+ */
+
+.wp-block-heading.is-style-sidebar-tool {
+    font-family: var(--wp--preset--font-family--cormorant);
+    font-style: italic;
+    font-weight: normal;
+    font-size: var(--wp--preset--font-size--small);
+    color: var(--wp--preset--color--dark-blue);
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--wp--preset--color--blue);
+}
