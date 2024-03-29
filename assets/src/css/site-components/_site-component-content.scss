@@ -1,0 +1,21 @@
+/**
+ * Site component: content
+ *
+ * @author  Marco Di Bella
+ * @package ARTlyris
+ */
+
+
+
+.site-component-content {
+
+    & > article {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-around;
+        //align-items: center;
+    }
+
+}
