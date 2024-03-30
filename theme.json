@@ -159,11 +159,19 @@
             "fontSizes": [
                 {
                     "size": "0.875rem",
+                    "fluid": {
+                        "min": "0.875rem",
+                        "max": "1rem"
+                    },
                     "slug": "small",
                     "name": "Small"
                 },
                 {
                     "size": "1rem",
+                    "fluid": {
+                        "min": "1rem",
+                        "max": "1.25rem"
+                    },
                     "slug": "medium",
                     "name": "Medium"
                 },
