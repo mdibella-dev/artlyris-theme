@@ -9,19 +9,4 @@
 .wp-block-categories.wp-block-categories-list {
     list-style: none;
     padding-left: 0;
-    gap: .25rem;
-    display: flex;
-    flex-direction: column;
-
-
-    .cat-item,
-    .cat-item a {
-        // for development purpose
-        font-family: var(--wp--preset--font-family--open-sans);
-        font-size: 75%;
-        font-weight: 400;
-        text-transform: uppercase;
-        line-height: 1.4;
-        letter-spacing: 1px;
-    }
 }
