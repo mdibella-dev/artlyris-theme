@@ -237,7 +237,12 @@
                 "color": {
                     "text": "var(--wp--preset--color--brown)"
                 },
-                "outline": "none"
+                "outline": "none",
+                ":hover":{
+                    "color": {
+                        "text": "var(--wp--preset--color--dark-blue)"
+                    }
+                }
             }
         },
         "blocks": {
