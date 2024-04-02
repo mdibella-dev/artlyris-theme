@@ -11,7 +11,11 @@
 <div class="wp-block-group alignfull has-pale-dark-gray-background-color has-background" style="padding-left:var(--wp--style--root--padding-left);padding-right:var(--wp--style--root--padding-right);height:150px;display:flex;flex-wrap:wrap;justify-content:flex-start;align-content:center;align-items:center;">
 
     <!-- wp:paragraph {"style":{"spacing":{"margin":"0","padding":"0"}}} -->
-    <p style="padding:0;margin:0;width:100%;"><em>Stichwort</em></p>
+    <p style="padding:0;margin:0;width:100%;"><em><?php>
+
+    /// do some PHP
+
+    ?></em></p>
     <!-- /wp:paragraph -->
 
     <!-- wp:group {"spacing":{"margin":{"top":"0"}}} -->
