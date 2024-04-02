@@ -32,7 +32,12 @@
                 {
                     "name": "Pale Gray",
                     "slug": "pale-gray",
-                    "color": "#DCE2E1"
+                    "color": "HSL(170,9.4%,87.5%)"
+                },
+                {
+                    "name": "Pale Dark Gray",
+                    "slug": "pale-dark-gray",
+                    "color": "HSL(170,9.4%,77.5%)"
                 },
                 {
                     "name": "Brown",
