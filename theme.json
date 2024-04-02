@@ -167,10 +167,10 @@
                     "name": "Small"
                 },
                 {
-                    "size": "1rem",
+                    "size": "1.0625em",
                     "fluid": {
                         "min": "1rem",
-                        "max": "1.25rem"
+                        "max": "1.1875rem"
                     },
                     "slug": "medium",
                     "name": "Medium"
