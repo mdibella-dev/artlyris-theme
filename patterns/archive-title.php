@@ -6,14 +6,23 @@
  */
 ?>
 
-
 <!-- wp:group {"align":"full","backgroundColor":"pale-dark-gray","layout":{"type":"constrained"},"spacing":{"padding":{"left":"style|root|padding|left","right":"style|root|padding|right"}}} -->
 <div class="wp-block-group alignfull has-pale-dark-gray-background-color has-background" style="padding-left:var(--wp--style--root--padding-left);padding-right:var(--wp--style--root--padding-right);height:150px;display:flex;flex-wrap:wrap;justify-content:flex-start;align-content:center;align-items:center;">
 
     <!-- wp:paragraph {"style":{"spacing":{"margin":"0","padding":"0"}}} -->
-    <p style="padding:0;margin:0;width:100%;"><em><?php>
+    <p style="padding:0;margin:0;width:100%;"><em><?php
 
-    /// do some PHP
+    if ( is_archive() ) {
+
+        if ( is_category() ) {
+            echo __( 'Category', 'artlyris' );
+        } elseif ( is_tag() ) {
+            echo __( 'Tag', 'artlyris' );
+        } else {
+            echo __( 'Archive', 'artlyris' );
+        }
+
+    }
 
     ?></em></p>
     <!-- /wp:paragraph -->
