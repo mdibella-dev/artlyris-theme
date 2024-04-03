@@ -1,12 +1,12 @@
 # ARTlyris
-WordPress theme for the website ARTlyris
+WordPress theme for the ARTlyris website
 
 <br>
 
 ## Development Info
 
 ### Contributors
-[Marco Di Bella ](https://github.com/mdibella-dev)
+[Marco Di Bella ](https://github.com/mdibella-dev/)
 
 ### Tags
 gutenberg, block-editor, full-site-editing, translation-ready, responsive, sidebar
