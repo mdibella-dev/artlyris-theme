@@ -6,8 +6,8 @@
  */
 ?>
 
-<!-- wp:group {"align":"full","backgroundColor":"pale-dark-gray","layout":{"type":"constrained"},"spacing":{"padding":{"left":"style|root|padding|left","right":"style|root|padding|right"}}} -->
-<div class="wp-block-group alignfull has-pale-dark-gray-background-color has-background" style="padding-left:var(--wp--style--root--padding-left);padding-right:var(--wp--style--root--padding-right);height:150px;display:flex;flex-wrap:wrap;justify-content:flex-start;align-content:center;align-items:center;">
+<!-- wp:group {"align":"full","backgroundColor":"pale-dark-gray","layout":{"type":"constrained"},"spacing":{"padding":{"left":"style|root|padding|left","right":"style|root|padding|right"},"margin":{"bottom":"custom|main|padding-top"}}} -->
+<div class="wp-block-group alignfull has-pale-dark-gray-background-color has-background" style="padding-left:var(--wp--style--root--padding-left);padding-right:var(--wp--style--root--padding-right);margin-bottom:var(--wp--custom--main--padding-top);height:150px;display:flex;flex-wrap:wrap;justify-content:flex-start;align-content:center;align-items:center;">
 
     <!-- wp:paragraph {"style":{"spacing":{"margin":"0","padding":"0"}}} -->
     <p style="padding:0;margin:0;width:100%;"><em><?php

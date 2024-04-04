@@ -205,7 +205,12 @@
             "textTransform": true,
             "textDecoration": false,
             "dropCap": false
-        }
+        },
+        "custom": {
+           "main": {
+               "padding-top":"100px"
+           }
+       }
     },
     "styles": {
         "color": {
