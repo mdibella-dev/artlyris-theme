@@ -9,7 +9,7 @@ WordPress theme for the ARTlyris website
 [Marco Di Bella ](https://github.com/mdibella-dev/)
 
 ### Tags
-gutenberg, block-editor, full-site-editing, translation-ready, responsive, sidebar
+gutenberg, block-editor, full-site-editing, translation-ready, responsive, sidebar, patterns
 
 ### Requires at least
 
