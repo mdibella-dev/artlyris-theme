@@ -1,5 +1,5 @@
 /**
- * Site component: header-navigation
+ * Site components: header-navigation, header-logo
  *
  * @author  Marco Di Bella
  * @package ARTlyris
@@ -7,9 +7,9 @@
 
 
 
-.site-component-header-navigation {
-}
-
+/**
+ * .site-component-header-navigation
+ */
 
 .site-component-header-navigation-item-wrapper {
     display: flex;
@@ -38,4 +38,26 @@
     line-height: 1.4;
     letter-spacing: 2px;
     text-transform: uppercase;
+}
+
+
+
+/**
+ * .site-component-header-logo
+ */
+
+
+.site-component-header-logo {
+    display: block;
+    width: auto;
+    height: 3rem;
+
+    @include on_breakpoint(medium) {
+        height: 4rem
+    }
+
+    & > svg {
+        width: auto;
+        height: 100%;
+    }
 }
