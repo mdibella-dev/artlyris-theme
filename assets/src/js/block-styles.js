@@ -26,7 +26,6 @@ wp.domReady( () => {
 
     // Remove unused block variations
     // Current block manager plugins are failing
-    wp.blocks.unregisterBlockVariation( 'core/embed', 'instagram' );
     wp.blocks.unregisterBlockVariation( 'core/embed', 'soundcloud' );
     wp.blocks.unregisterBlockVariation( 'core/embed', 'spotify' );
     wp.blocks.unregisterBlockVariation( 'core/embed', 'animoto' );

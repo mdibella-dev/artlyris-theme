@@ -26,19 +26,17 @@ function register_block_styles() {
     $filename = 'assets/src/js/block-styles.js';
     //$filename = 'assets/build/js/block-styles.min.js';
 
-    if( file_exists( THEME_DIR . $filename ) ) {
-
-        wp_enqueue_style(
-            'artlyris-block-style',
-            THEME_URI . $filename,
-            [
-                'wp-blocks',
-                'wp-dom-ready',
-                'wp-edit-post'
-            ],
-            THEME_VERSION . '.' . filemtime( THEME_DIR . $filename ),
-        );
-    }
+    wp_enqueue_script(
+        'mdb-block-styles',
+        THEME_URI . $filename,
+        [
+            'wp-blocks',
+            'wp-dom-ready',
+            'wp-edit-post'
+        ],
+        THEME_VERSION,
+        true
+    );
 
 }
 
