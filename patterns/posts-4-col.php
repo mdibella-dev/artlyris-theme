@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: List of posts, 3 columns
+ * Title: List of posts, 4 columns
  * Slug: artlyris-theme/posts-4-col
  * Categories: query
  * Block Types: core/query
