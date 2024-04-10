@@ -251,6 +251,9 @@
                 ":hover":{
                     "color": {
                         "text": "var(--wp--preset--color--dark-blue)"
+                    },
+                    "typography": {
+                        "textDecoration": "underline"
                     }
                 }
             }
