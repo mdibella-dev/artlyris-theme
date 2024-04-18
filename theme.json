@@ -274,6 +274,18 @@
                 "typography": {
                     "fontSize": "var(--wp--preset--font-size--x-large)"
                 }
+            },
+            "core/quote": {
+                "spacing": {
+                    "margin": {
+                        "top": "var(--wp--preset--spacing--40)",
+                        "bottom": "var(--wp--preset--spacing--40)"
+                    }
+                },
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--open-sans)",                
+                    "fontStyle": "italic"
+                }
             }
         }
     }
