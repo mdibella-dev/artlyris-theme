@@ -30,6 +30,11 @@
                     "color": "#C8DAE4"
                 },
                 {
+                    "name": "Very Pale Blue",
+                    "slug": "very-pale-blue",
+                    "color": "HSL(170,35%,95%)"
+                },
+                {
                     "name": "Pale Gray",
                     "slug": "pale-gray",
                     "color": "HSL(170,9.4%,87.5%)"
@@ -43,6 +48,11 @@
                     "name": "Brown",
                     "slug": "brown",
                     "color": "HSL(33.5,30.2%,50%)"
+                },
+                {
+                    "name": "Pale Brown",
+                    "slug": "pale-brown",
+                    "color": "HSL(33.5,30.2%,80%)"
                 }
             ],
             "gradients": [],
@@ -209,13 +219,17 @@
         "custom": {
            "main": {
                "padding-top":"100px"
+           },
+           "color": {
+               "background": "var(--wp--preset--color--pale-gray)",
+               "primary": "var(--wp--preset--color--dark-blue)"
            }
        }
     },
     "styles": {
         "color": {
-            "background": "var(--wp--preset--color--pale-gray)",
-            "text": "var(--wp--preset--color--dark-blue)"
+            "background": "var(--wp--custom--color--background)",
+            "text": "var(--wp--custom--color--primary)"
         },
         "typography": {
             "fontSize": "1.5rem",
@@ -251,9 +265,6 @@
                 ":hover":{
                     "color": {
                         "text": "var(--wp--preset--color--dark-blue)"
-                    },
-                    "typography": {
-                        "textDecoration": "underline"
                     }
                 }
             }
