@@ -42,7 +42,7 @@
                 {
                     "name": "Brown",
                     "slug": "brown",
-                    "color": "#B59874"
+                    "color": "HSL(33.5,30.2%,50%)"
                 }
             ],
             "gradients": [],
@@ -283,7 +283,7 @@
                     }
                 },
                 "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--open-sans)",                
+                    "fontFamily": "var(--wp--preset--font-family--open-sans)",
                     "fontStyle": "italic"
                 }
             }
