@@ -20,6 +20,9 @@
     </div>
     <!-- /wp:group -->
 
+    <?php
+    if ( has_tag() ) {
+    ?>
     <!-- wp:group {"className":"site-component-sidebar-tool"} -->
     <div class="wp-block-group site-component-sidebar-tool">
 
@@ -30,6 +33,9 @@
 
     </div>
     <!-- /wp:group -->
+    <?php
+    }
+    ?>
 
 </aside>
 <!-- /wp:group -->
