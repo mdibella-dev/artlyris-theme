@@ -304,5 +304,14 @@
                 }
             }
         }
-    }
+    },
+    "customTemplates": [
+        {
+            "name": "edition-lebenswege",
+            "title": "Edition Lebenswege",
+            "postTypes": [
+                "page"
+            ]
+        }
+    ]
 }
