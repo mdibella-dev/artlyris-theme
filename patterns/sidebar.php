@@ -20,6 +20,7 @@
     </div>
     <!-- /wp:group -->
 
+
     <?php
     if ( has_tag() ) {
     ?>
@@ -37,32 +38,37 @@
     }
     ?>
 
+
     <?php
     if ( has_term( '', 'edition') ) {
 
         global $post;
-        $pages = [];
-        $x;
+               $editions = [];
+               $terms    = get_the_terms( $post, 'edition' );
 
-        $terms = get_the_terms( $post, 'edition' );
+        if ( ! empty( $terms ) ) {
 
-        if ( is_array( $terms ) ) {
-            $x = $terms[0]->term_id;
-            $pages = get_posts( [
-                'post_type'   => 'page',
-                'numberposts' => 1,
-                'tax_query'   => [
-                    [
-                        'taxonomy'         => 'edition',
-                        'field'            => 'term_id',
-                        'terms'            => $terms[0]->term_id,
-                        'include_children' => false
+            foreach ( $terms as $term ) {
+
+                $pages = get_posts( [
+                    'post_type'   => 'page',
+                    'numberposts' => 1,
+                    'tax_query'   => [
+                        [
+                            'taxonomy'         => 'edition',
+                            'field'            => 'term_id',
+                            'terms'            => $term->term_id,
+                            'include_children' => false
+                        ]
                     ]
-                ]
-            ] );
-        }
+                ] );
 
-        if( ! empty( $pages ) ) {
+                if ( ! empty( $pages ) ) {
+                    $editions[] = $pages[0];
+                }
+            }
+
+            if ( ! empty( $editions ) ) {
     ?>
     <!-- wp:group {"className":"site-component-sidebar-tool"} -->
     <div class="wp-block-group site-component-sidebar-tool">
@@ -70,11 +76,27 @@
         <!-- wp:heading {"level":6,"className":"is-style-sidebar-tool"} /-->
         <h6 class="wp-block-heading is-style-sidebar-tool"><span><?php echo __( 'Editions', 'artlyris' ); ?></span></h6>
 
-        <p><a href="<?php echo get_permalink( $pages[0] ); ?>"><?php echo __( 'Part of this edition', 'artlyris' ); ?></a></p>
+        <!-- wp:group -->
+        <div>
+
+                <?php
+                foreach ( $editions as $edition ) {
+                ?>
+            <p>
+            <a href="<?php echo get_permalink( $edition ); ?>"><?php echo __( 'Part of this edition', 'artlyris' ); ?></a>
+            </p>
+
+                <?php
+                }
+                ?>
+
+        </div>
+        <!-- /wp:group -->
 
     </div>
     <!-- /wp:group -->
     <?php
+            }
         }
     }
     ?>
