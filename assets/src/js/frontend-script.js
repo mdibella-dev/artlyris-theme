@@ -1,15 +1,37 @@
+/**
+ * Do some magic
+ *
+ * @author  Marco Di Bella
+ * @package ARTlyris
+ */
+
+
+
+/********************************
+ * Helper functions
+ ********************************/
+
+
+/**
+ * setHeaderHeightVar()
+ */
+
+function setHeaderHeightVar() {
+    let header_height = document.querySelector( '.wp-site-blocks > header' ).getBoundingClientRect().height;
+
+    document.querySelector( ':root' ).style.setProperty( '--header-height', header_height + 'px' );
+}
+
+
+
 /********************************
  * Event handlers
  ********************************/
 
 
 /**
- * Do some adjustments if the window has been resized
+ * Events to fire the setHeaderHeightVar() procedure
  */
 
-window.addEventListener( 'resize', function() {
-
-    let header_height = document.querySelector( '.wp-site-blocks > header' ).getBoundingClientRect().height;
-
-    document.querySelector( ':root' ).style.setProperty( '--header-height', header_height );
-} );
+document.addEventListener( 'DOMContentLoaded', (event) => { setHeaderHeightVar(); } );
+window.addEventListener( 'resize', (event) => { setHeaderHeightVar(); } );
