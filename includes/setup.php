@@ -46,31 +46,44 @@ add_action( 'after_setup_theme', __NAMESPACE__ . '\theme_setup' );
  */
 
 function theme_scripts() {
+
     /**
-     * Registers and loads the theme's own styles and scripts.
+     * Registers and loads the theme's own scripts.
+     */
+
+    //$filename = 'assets/build/js/frontend.min.js';
+    $filename = 'assets/src/js/frontend.js';
+
+    if ( file_exists( THEME_DIR . $filename ) ) {
+
+        wp_enqueue_script(
+            'artlyris-frontend-script',
+            THEME_URI . $filename,
+            [],
+            THEME_VERSION . '.' . filemtime( THEME_DIR . $filename ),
+            true
+        );
+    }
+
+
+    /**
+     * Registers and loads the theme's own styles.
      *
      * Note: The style.css in the main directory is only used for theme identification and versioning.
      * Actually the (compressed) style information can be found in frontend(.min).css.
      */
 
-    wp_enqueue_style(
-        'artlyris-frontend-style',
-        THEME_URI . 'assets/build/css/style-frontend.min.css',  // change path/name if necessary
-        [],
-        THEME_VERSION
-    );
+    $filename = 'assets/build/css/style-frontend.min.css';
 
-/*
-    wp_enqueue_script(
-        'artlyris-frontend-script',
-        THEME_URI . 'assets/build/js/frontend.min.js',          // change path/name if necessary
-        [
-            'jquery'                                            // remove if not used
-        ],
-        THEME_VERSION,
-        true
-    );
-*/
+    if ( file_exists( THEME_DIR . $filename ) ) {
+
+        wp_enqueue_style(
+            'artlyris-frontend-style',
+            THEME_URI . $filename,
+            [],
+            THEME_VERSION . '.' . filemtime( THEME_DIR . $filename ),
+        );
+    }
 }
 
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\theme_scripts', 9999 );
