@@ -32,7 +32,7 @@ function theme_setup() {
 
     // Adds editor styles.
     add_theme_support( 'editor-styles' );
-    add_editor_style( 'assets/build/css/style-frontend.min.css' );
+    add_editor_style( 'assets/build/css/frontend-style.min.css' );
 }
 
 add_action( 'after_setup_theme', __NAMESPACE__ . '\theme_setup' );
@@ -51,8 +51,8 @@ function theme_scripts() {
      * Registers and loads the theme's own scripts.
      */
 
-    //$filename = 'assets/build/js/frontend.min.js';
-    $filename = 'assets/src/js/frontend.js';
+    //$filename = 'assets/build/js/frontend-script.min.js';
+    $filename = 'assets/src/js/frontend-script.js';
 
     if ( file_exists( THEME_DIR . $filename ) ) {
 
@@ -73,7 +73,7 @@ function theme_scripts() {
      * Actually the (compressed) style information can be found in frontend(.min).css.
      */
 
-    $filename = 'assets/build/css/style-frontend.min.css';
+    $filename = 'assets/build/css/frontend-style.min.css';
 
     if ( file_exists( THEME_DIR . $filename ) ) {
 
