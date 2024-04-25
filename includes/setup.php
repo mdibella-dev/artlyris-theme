@@ -48,6 +48,23 @@ add_action( 'after_setup_theme', __NAMESPACE__ . '\theme_setup' );
 function theme_scripts() {
 
     /**
+     * Registers and loads vendor styles and scripts.
+     */
+
+    wp_enqueue_script(
+        'anime',
+        THEME_URI . 'assets/build/vendors/anime/anime.min.js',
+        [],
+        false,
+        [
+            'in_footer' => true,
+            'strategy'  => 'async'
+        ]
+    );
+
+
+
+    /**
      * Registers and loads the theme's own scripts.
      */
 
