@@ -1,0 +1,18 @@
+/**
+ * Site component: backdrop
+ *
+ * @author  Marco Di Bella
+ * @package ARTlyris
+ */
+
+
+
+.site-component-backdrop {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background:linear-gradient(to bottom,white 15%,var(--wp--custom--color--background) 50%);
+    margin-top: 0 !important;
+}
