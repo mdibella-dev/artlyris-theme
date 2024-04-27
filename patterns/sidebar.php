@@ -13,7 +13,7 @@
     <div class="wp-block-group site-component-sidebar-tool">
 
         <!-- wp:heading {"level":6,"className":"is-style-sidebar-tool"} /-->
-        <h6 class="wp-block-heading is-style-sidebar-tool"><span><?php echo __( 'Categories', 'artlyris' ); ?></span></h6>
+        <h6 class="wp-block-heading is-style-sidebar-tool"><span class="label"><?php echo __( 'Categories', 'artlyris' ); ?></span><span class="line"></span></h6>
 
         <!-- wp:categories /-->
 
@@ -28,7 +28,7 @@
     <div class="wp-block-group site-component-sidebar-tool">
 
         <!-- wp:heading {"level":6,"className":"is-style-sidebar-tool"} /-->
-        <h6 class="wp-block-heading is-style-sidebar-tool"><span><?php echo __( 'Tags', 'artlyris' ); ?></span></h6>
+        <h6 class="wp-block-heading is-style-sidebar-tool"><span class="label"><?php echo __( 'Tags', 'artlyris' ); ?></span><span class="line"></span></h6>
 
         <!-- wp:post-terms {"term":"post_tag"} /-->
 
@@ -74,7 +74,7 @@
     <div class="wp-block-group site-component-sidebar-tool">
 
         <!-- wp:heading {"level":6,"className":"is-style-sidebar-tool"} /-->
-        <h6 class="wp-block-heading is-style-sidebar-tool"><span><?php echo __( 'Editions', 'artlyris' ); ?></span></h6>
+        <h6 class="wp-block-heading is-style-sidebar-tool"><span class="label"><?php echo __( 'Editions', 'artlyris' ); ?></span><span class="line"></span></h6>
 
         <!-- wp:group -->
         <div>

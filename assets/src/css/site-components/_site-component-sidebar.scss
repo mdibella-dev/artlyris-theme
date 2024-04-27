@@ -30,24 +30,25 @@
     width: 100%;
     margin-top: 0;
     margin-bottom: 0;
-    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    gap: .5rem;
 
-    &::after {
-        border-bottom: 1px solid var(--wp--preset--color--blue);
-        content: " ";
-        display: block;
-        top: -6px;
-        left: 0;
-        position: relative;
-        width: 100%;
-        z-index: -1;
+
+    & .label {
+        flex-shrink: 0;
     }
 
-    & > span {
-        background: var(--wp--custom--color--background);
-        padding: 0 8px 1px 0;
+
+    & .line {
+        border-bottom: 1px solid var(--wp--preset--color--blue);
+        display: block;
+        flex-basis: 100%;
+        flex-shrink: 1;
     }
 }
+
 
 
 .site-component-sidebar-tool > .wp-block-heading + * {
