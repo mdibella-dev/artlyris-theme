@@ -307,8 +307,8 @@
     },
     "customTemplates": [
         {
-            "name": "edition-lebenswege",
-            "title": "Edition Lebenswege",
+            "name": "edition",
+            "title": "Edition",
             "postTypes": [
                 "page"
             ]
