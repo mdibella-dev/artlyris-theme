@@ -63,7 +63,6 @@ function theme_scripts() {
     );
 
 
-
     /**
      * Registers and loads the theme's own scripts.
      */
@@ -76,7 +75,9 @@ function theme_scripts() {
         wp_enqueue_script(
             'artlyris-frontend-script',
             THEME_URI . $filename,
-            [],
+            [
+                'anime'
+            ],
             THEME_VERSION . '.' . filemtime( THEME_DIR . $filename ),
             true
         );
