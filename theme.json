@@ -47,12 +47,12 @@
                 {
                     "name": "Brown",
                     "slug": "brown",
-                    "color": "HSL(33.5,30.2%,50%)"
+                    "color": "HSL(33,50.2%,50%)"
                 },
                 {
                     "name": "Pale Brown",
                     "slug": "pale-brown",
-                    "color": "HSL(33.5,30.2%,80%)"
+                    "color": "HSL(33,30.2%,80%)"
                 }
             ],
             "gradients": [],
