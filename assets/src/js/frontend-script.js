@@ -35,3 +35,28 @@ function setHeaderHeightVar() {
 
 document.addEventListener( 'DOMContentLoaded', (event) => { setHeaderHeightVar(); } );
 window.addEventListener( 'resize', (event) => { setHeaderHeightVar(); } );
+
+
+/**
+ * Events to animate edition header
+ */
+
+document.addEventListener( 'DOMContentLoaded', (event) => {
+
+    if ( document.querySelector( 'body' ).classList.contains( 'page-template-edition' ) ) {
+
+        const edition_image = document.querySelector( '.edition-image' );
+
+        if ( edition_image != null ) {
+
+            anime( {
+                targets: edition_image,
+                opacity: 1,
+                translateY: -50,
+                duration: 750,
+                easing: 'easeInOutQuad'
+            } );
+
+        }
+    }
+} );
