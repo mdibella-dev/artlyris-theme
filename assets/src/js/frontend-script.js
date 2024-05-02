@@ -45,7 +45,7 @@ document.addEventListener( 'DOMContentLoaded', (event) => {
 
     if ( document.querySelector( 'body' ).classList.contains( 'page-template-edition' ) ) {
 
-        const edition_image = document.querySelector( '.edition-image' );
+        const edition_image = document.querySelector( '.edition-image--animate-fade-in' );
 
         if ( edition_image != null ) {
 

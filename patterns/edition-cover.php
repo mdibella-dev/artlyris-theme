@@ -18,8 +18,8 @@
         $post_thumbnail_alt = get_post_meta( $post_thumbnail_id, '_wp_attachment_image_alt', true);
     ?>
 
-    <!-- wp:image {"id":<?php echo $post_thumbnail_id; ?>,"sizeSlug":"full","linkDestination":"none","align":"center"} -->
-    <figure class="edition-image wp-block-image aligncenter size-full"><img src="<?php echo $post_thumbnail_url; ?>" alt="<?php echo $post_thumbnail_alt; ?>"/></figure>
+    <!-- wp:image {"id":<?php echo $post_thumbnail_id; ?>,"sizeSlug":"full","linkDestination":"none","align":"center",className:"edition-image edition-image--animate-fade-in"} -->
+    <figure class="edition-image edition-image--animate-fade-in wp-block-image aligncenter size-full"><img src="<?php echo $post_thumbnail_url; ?>" alt="<?php echo $post_thumbnail_alt; ?>"/></figure>
     <!-- /wp:image -->
 
     <?php
