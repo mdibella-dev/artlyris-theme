@@ -34,7 +34,7 @@ function register_block_styles() {
             'wp-dom-ready',
             'wp-edit-post'
         ],
-        THEME_VERSION,
+        THEME_VERSION . '.' . filemtime( THEME_DIR . $filename ),
         true
     );
 

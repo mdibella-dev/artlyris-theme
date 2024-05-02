@@ -9,8 +9,19 @@ wp.domReady( () => {
         ]
     );
 
+    wp.blocks.registerBlockStyle(
+        'core/image',
+        [
+            {
+                name: 'float',
+                label: 'Float',
+                isDefault: false
+            }
+        ]
+    );
 
-    /** core/image */
+
+    /** core/heading */
 
     wp.blocks.registerBlockStyle(
         'core/heading',
