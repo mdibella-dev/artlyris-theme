@@ -83,7 +83,22 @@
                 foreach ( $editions as $edition ) {
                 ?>
             <p>
-            <a href="<?php echo get_permalink( $edition ); ?>"><?php echo __( 'Part of this edition', 'artlyris' ); ?></a>
+            <a href="<?php echo get_permalink( $edition ); ?>"><?php //echo __( 'Part of this edition', 'artlyris' );
+
+            $post_thumbnail_id = get_post_thumbnail_id( $edition );
+
+            if ( $post_thumbnail_id ) {
+                $post_thumbnail_url = get_the_post_thumbnail_url( $edition, 'full' );
+                $post_thumbnail_alt = get_post_meta( $post_thumbnail_id, '_wp_attachment_image_alt', true);
+            ?>
+
+            <!-- wp:image {"id":<?php echo $post_thumbnail_id; ?>,"sizeSlug":"full","linkDestination":"none","align":"center",className:"edition-image"} -->
+            <figure class="edition-image wp-block-image aligncenter size-full"><img src="<?php echo $post_thumbnail_url; ?>" alt="<?php echo $post_thumbnail_alt; ?>"/></figure>
+            <!-- /wp:image -->
+
+            <?php
+            }
+            ?></a>
             </p>
 
                 <?php
