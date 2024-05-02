@@ -8,7 +8,11 @@
 
 
 .edition-image {
-    opacity: 0;
-    left: -80px;
+    left: calc(-1*min((45% / 2), 80px) );
     position: relative;
+}
+
+
+.edition-image--animate-fade-in {
+    opacity: 0;
 }
