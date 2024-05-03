@@ -83,7 +83,7 @@
                 foreach ( $editions as $edition ) {
                 ?>
             <p>
-            <a href="<?php echo get_permalink( $edition ); ?>"><?php //echo __( 'Part of this edition', 'artlyris' );
+            <a href="<?php echo get_permalink( $edition ); ?>"><?php
 
             $post_thumbnail_id = get_post_thumbnail_id( $edition );
 
