@@ -9,18 +9,6 @@
 <!-- wp:group {"className":"site-component-sidebar","tagName":"aside"} -->
 <aside class="wp-block-group site-component-sidebar">
 
-    <!-- wp:group {"className":"site-component-sidebar-tool"} -->
-    <div class="wp-block-group site-component-sidebar-tool">
-
-        <!-- wp:heading {"level":6,"className":"is-style-sidebar-tool"} /-->
-        <h6 class="wp-block-heading is-style-sidebar-tool"><span class="label"><?php echo __( 'Categories', 'artlyris' ); ?></span><span class="line"></span></h6>
-
-        <!-- wp:categories /-->
-
-    </div>
-    <!-- /wp:group -->
-
-
     <?php
     if ( has_tag() ) {
     ?>
@@ -115,6 +103,18 @@
         }
     }
     ?>
+
+
+    <!-- wp:group {"className":"site-component-sidebar-tool"} -->
+    <div class="wp-block-group site-component-sidebar-tool">
+
+        <!-- wp:heading {"level":6,"className":"is-style-sidebar-tool"} /-->
+        <h6 class="wp-block-heading is-style-sidebar-tool"><span class="label"><?php echo __( 'Categories', 'artlyris' ); ?></span><span class="line"></span></h6>
+
+        <!-- wp:categories /-->
+
+    </div>
+    <!-- /wp:group -->
 
 </aside>
 <!-- /wp:group -->
