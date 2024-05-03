@@ -53,6 +53,11 @@
                     "name": "Pale Brown",
                     "slug": "pale-brown",
                     "color": "HSL(33,30.2%,80%)"
+                },
+                {
+                    "name": "Finch",
+                    "slug": "finch",
+                    "color": "HSL(69,9.1%,33.1%)"
                 }
             ],
             "gradients": [],
@@ -169,6 +174,29 @@
                     ],
                     "name": "Open Sans",
                     "slug": "open-sans"
+                },
+                {
+                    "fontFamily": "Playfair, \"Time New Roman\", Times, serif",
+                    "fontFace": [
+                        {
+                            "fontFamily": "Playfair",
+                            "fontWeight": "300 900",
+                            "fontStyle": "normal",
+                            "src": [
+                                "file:./assets/fonts/Playfair-VariableFont_opsz,wdth,wght.ttf"
+                            ]
+                        },
+                        {
+                            "fontFamily": "Playfair",
+                            "fontWeight": "300 900",
+                            "fontStyle": "italic",
+                            "src": [
+                                "file:./assets/fonts/Playfair-Italic-VariableFont_opsz,wdth,wght.ttf"
+                            ]
+                        }
+                    ],
+                    "name": "Playfair",
+                    "slug": "playfair"
                 }
             ],
             "fontSizes": [
@@ -235,7 +263,7 @@
             "fontSize": "1.5rem",
             "fontFamily": "var(--wp--preset--font-family--cormorant)",
             "fontSize": "var(--wp--preset--font-size--medium)",
-            "lineHeight": "1.5"
+            "lineHeight": "1.6"
         },
         "spacing": {
             "padding": {
@@ -290,17 +318,30 @@
                 "spacing": {
                     "margin": {
                         "top": "var(--wp--preset--spacing--40)",
-                        "bottom": "var(--wp--preset--spacing--40)"
+                        "bottom": "var(--wp--preset--spacing--40)",
+                        "right": "0",
+                        "left": "1.5rem"
+                    },
+                    "padding": {
+                        "left": "1.5rem"
                     }
                 },
                 "typography": {
-                    "fontFamily": "var(--wp--preset--font-family--open-sans)",
-                    "fontStyle": "italic"
-                }
-            },
-            "core/post-featured-image": {
+                    "fontStyle": "italic",
+                    "fontWeight": "300",
+                    "fontFamily": "var(--wp--preset--font-family--playfair)",
+                    "fontSize": "90%",
+                    "lineHeight": "1.4"
+                },
+                "color": {
+                    "text": "var(--wp--preset--color--finch)"
+                },
                 "border": {
-                    "radius": "4px"
+                    "left": {
+                        "width": "1px",
+                        "style": "solid",
+                        "color": "var(--wp--preset--color--finch)"
+                    }
                 }
             }
         }

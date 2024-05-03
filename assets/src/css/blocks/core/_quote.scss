@@ -1,0 +1,20 @@
+/**
+ * Block: core/quote
+ *
+ * @author  Marco Di Bella
+ * @package ARTlyris
+ */
+
+
+
+blockquote {
+
+    & cite {
+        font-family: var(--wp--preset--font-family--open-sans);
+        font-weight: 400;
+        letter-spacing: .2px;
+        font-size: 60%;
+        font-style: normal;
+        margin-top: 3.5em;
+    }
+}
