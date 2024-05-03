@@ -1,0 +1,36 @@
+/**
+ * Site component: author info
+ *
+ * @author  Marco Di Bella
+ * @package ARTlyris
+ */
+
+
+.site-component-author-info {
+    border-top: 1px solid var(--wp--preset--color--blue);
+    margin-top: var(--wp--preset--spacing--50);
+    padding-top: var(--wp--preset--spacing--40);
+    padding-bottom: var(--wp--preset--spacing--40);
+}
+
+
+.site-component-author-info .wp-block-columns {
+    gap: 3rem;
+}
+
+
+.site-component-author-info .wp-block-post-author-name {
+    font-size: 75%;
+    font-weight: 400;
+    font-family: var(--wp--preset--font-family--open-sans);
+    text-transform: uppercase;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+
+.site-component-author-info .wp-block-post-author-biography {
+    font-size: 80%;
+    margin-top: .5rem;
+    line-height: 1.3;
+}
