@@ -34,7 +34,7 @@ $breakpoints: (
  * @param $breakpoint one of the following values: mobile, small, medium, large, wide, huge
  */
 
-@mixin on_breakpoint( $breakpoint) {
+@mixin on_breakpoint( $breakpoint ) {
 
     @if map-has-key( $breakpoints, $breakpoint ) {
         $value: map-get( $breakpoints, $breakpoint );
