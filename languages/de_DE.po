@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ARTlyris\n"
-"POT-Creation-Date: 2024-04-07 13:59+0200\n"
-"PO-Revision-Date: 2024-04-07 14:00+0200\n"
+"POT-Creation-Date: 2024-05-05 12:55+0200\n"
+"PO-Revision-Date: 2024-05-05 12:58+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -32,9 +32,25 @@ msgstr "Stichwort"
 msgid "Archive"
 msgstr "Archiv"
 
-#: patterns/header-navigation.php:17
+#: patterns/footer-artdesign-logo-claim.php:14
+msgid "A project by"
+msgstr "Ein Projekt von"
+
+#: patterns/footer-navigation.php:17 patterns/header-navigation.php:17
 msgid "Home"
 msgstr "Home"
+
+#: patterns/footer-navigation.php:23
+msgid "About"
+msgstr "Über uns"
+
+#: patterns/footer-navigation.php:29
+msgid "Imprint"
+msgstr "Impressum"
+
+#: patterns/footer-navigation.php:35
+msgid "Privacy Policy"
+msgstr "Datenschutz"
 
 #: patterns/header-navigation.php:23
 msgid "Authors"
@@ -44,17 +60,17 @@ msgstr "Autoren"
 msgid "Works"
 msgstr "Werke"
 
-#: patterns/header-navigation.php:35
+#: patterns/header-navigation.php:35 patterns/sidebar.php:65
 msgid "Editions"
 msgstr "Editionen"
 
-#: patterns/sidebar.php:16
-msgid "Categories"
-msgstr "Kategorien"
-
-#: patterns/sidebar.php:27
+#: patterns/sidebar.php:19
 msgid "Tags"
 msgstr "Stichworte"
+
+#: patterns/sidebar.php:112
+msgid "Categories"
+msgstr "Kategorien"
 
 #. Theme Name of the plugin/theme
 msgid "ARTlyris"
@@ -66,11 +82,11 @@ msgstr "https://github.com/mdibella-dev/artlyris/"
 
 #. Description of the plugin/theme
 msgid "WordPress theme for the ARTlyris website."
-msgstr "WordPress theme for the ARTlyris website."
+msgstr "WordPress-Theme für die Webseite von ARTlyris."
 
 #. Author of the plugin/theme
 msgid "Marco Di Bella"
-msgstr "ARTlyris"
+msgstr "Marco Di Bella"
 
 #. Author URI of the plugin/theme
 msgid "https://www.marcodibella.de/"
