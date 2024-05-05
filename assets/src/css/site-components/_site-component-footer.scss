@@ -32,12 +32,14 @@
 }
 
 
-.site-component-footer-navigation-item__content {
+.site-component-footer-navigation-item__content,
+.site-component-footer-artdesign {
     font-family: var(--wp--preset--font-family--open-sans);
     font-size: 50%;
     line-height: 1.4;
     letter-spacing: 2px;
     text-transform: uppercase;
+    white-space: nowrap;
 }
 
 
@@ -70,13 +72,4 @@
     @include on_breakpoint( medium ) {
         justify-content: space-between !important;
     }
-}
-
-
-.site-component-footer-artdesign {
-    font-family: var(--wp--preset--font-family--open-sans);
-    font-size: 50%;
-    line-height: 1.4;
-    letter-spacing: 2px;
-    text-transform: uppercase;
 }
