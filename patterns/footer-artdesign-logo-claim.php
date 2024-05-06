@@ -2,7 +2,7 @@
 /**
  * Title: ARTdesign Logo & Claim
  * Slug: artlyris-theme/footer-artdesign-logo-claim
- * Categories: footer
+ * Categories: footer, artlyris-patterns
  */
 ?>
 

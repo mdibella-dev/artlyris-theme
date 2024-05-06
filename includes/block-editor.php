@@ -36,3 +36,23 @@ function block_editor_settings_all( $editor_settings ) {
 }
 
 add_filter( 'block_editor_settings_all', __NAMESPACE__ . '\block_editor_settings_all' );
+
+
+
+/**
+ * Adds the block pattern category "ARTlyris" to the editor.
+ *
+ * @since 1.0.0
+ */
+
+function register_theme_block_pattern_category() {
+
+    register_block_pattern_category(
+        'artlyris-patterns', [
+            'label' => __( 'ARTlyris', 'artlyris' )
+        ]
+    );
+
+}
+
+add_action( 'init', __NAMESPACE__ . '\register_theme_block_pattern_category' );

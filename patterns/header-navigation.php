@@ -2,7 +2,7 @@
 /**
  * Title: Header Navigation
  * Slug: artlyris-theme/header-navigation
- * Categories: header, navigation
+ * Categories: header, artlyris-patterns
  */
 ?>
 

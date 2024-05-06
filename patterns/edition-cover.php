@@ -2,7 +2,7 @@
 /**
  * Title: Edition Cover
  * Slug: artlyris-theme/edition-cover
- * Categories: edition, page
+ * Categories: artlyris-patterns
  */
 ?>
 

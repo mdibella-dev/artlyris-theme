@@ -2,7 +2,7 @@
 /**
  * Title: Single Author Info
  * Slug: artlyris-theme/single-author-info
- * Categories: post
+ * Categories: artlyris-patterns
  */
 ?>
 

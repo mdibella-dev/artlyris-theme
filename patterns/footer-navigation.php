@@ -2,7 +2,7 @@
 /**
  * Title: Footer Navigation
  * Slug: artlyris-theme/footer-navigation
- * Categories: footer, navigation
+ * Categories: footer, artlyris-patterns
  */
 ?>
 

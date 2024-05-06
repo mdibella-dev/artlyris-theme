@@ -2,7 +2,7 @@
 /**
  * Title: Archive Title
  * Slug: artlyris-theme/archive-title
- * Categories: archive
+ * Categories: artlyris-patterns
  */
 ?>
 
