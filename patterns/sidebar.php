@@ -9,61 +9,63 @@
 <!-- wp:group {"className":"site-component-sidebar","tagName":"aside"} -->
 <aside class="wp-block-group site-component-sidebar">
 
+    <?php
+    if ( has_category() ) {
+        global $post;
+            $cats    = wp_get_post_categories( $post->ID, ['fields' => 'all'] );
+            $cat_str = '';
+
+            foreach( $cats as $cat ) {
+
+               $cat_link = get_term_link( $cat );
+
+               if ( is_wp_error( $cat_link ) ) {
+                   continue;
+               }
+
+               $cat_str = sprintf(
+                   '<a href="%1$s">%2$s</a>',
+                   esc_url( $cat_link ),
+                   $cat->name
+               );
+
+               if ( ! empty( $cat_str ) ) {
+                   break;
+               }
+            }
+
+            $author_str = sprintf(
+               '<a href="%1$s">%2$s</a>',
+               esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+               get_the_author_meta( 'display_name' )
+            );
+
+    ?>
     <!-- wp:group {"className":"site-component-sidebar-tool"} -->
     <div class="wp-block-group site-component-sidebar-tool">
 
-        <!-- wp:group -->
-        <div class="wp-block-group">
-<p>
-            <?php
-            if ( has_category() ) {
-                global $post;
-                       $cats    = wp_get_post_categories( $post->ID, ['fields' => 'all'] );
-                       $cat_str = '';
+        <!-- wp:heading {"level":6,"className":"is-style-sidebar-tool"} -->
+        <h6 class="wp-block-heading is-style-sidebar-tool"><span class="label"><?php echo __( 'Info', 'artlyris' ); ?></span><span class="line"></span></h6>
+        <!-- /wp:heading -->
 
-                foreach( $cats as $cat ) {
-
-                    $cat_link = get_term_link( $cat );
-
-                    if ( is_wp_error( $cat_link ) ) {
-                        continue;
-                    }
-
-                    $cat_str = sprintf(
-                        '<a href="%1$s">%2$s</a>',
-                        esc_url( $cat_link ),
-                        $cat->name
-                    );
-
-                    if ( ! empty( $cat_str ) ) {
-                        break;
-                    }
-                }
-
-                $author_str = sprintf(
-                    '<a href="%1$s">%2$s</a>',
-                    esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
-                    get_the_author_meta( 'display_name' )
-                );
-
-                echo sprintf(
-                    __( '%1$s by %2$s, published on %3$s', 'artlyris' ),
-                    $cat_str,
-                    $author_str,
-                    '1.2.2003'
-                );
-
-//print_r( get_post_datetime() );
-            }
-            ?>
-</p>
-        </div>
-        <!-- /wp:group -->
+        <!-- wp:paragraph -->
+        <p><?php
+        echo sprintf(
+           __( 'Written by %2$s and published in %3$s, filed under %1$s.', 'artlyris' ),
+           $cat_str,
+           $author_str,
+           wp_date( 'F Y', get_post_timestamp( $post->ID, 'date' ) )
+        );
+        ?></p>
+        <!-- /wp:paragraph -->
 
     </div>
     <!-- /wp:group -->
 
-    
+    <?php
+    }
+    ?>
+
     <?php
     if ( has_tag() ) {
     ?>

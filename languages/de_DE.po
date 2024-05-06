@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ARTlyris\n"
-"POT-Creation-Date: 2024-05-06 19:43+0200\n"
-"PO-Revision-Date: 2024-05-06 19:44+0200\n"
+"POT-Creation-Date: 2024-05-06 20:03+0200\n"
+"PO-Revision-Date: 2024-05-06 20:03+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -75,8 +75,8 @@ msgstr "Info"
 
 #: patterns/sidebar.php:54
 #, php-format
-msgid "%1$s by %2$s, published in %3$s"
-msgstr "%1$s von %2$s, veröffentlicht im %3$s"
+msgid "Written by %2$s and published in %3$s, filed under %1$s."
+msgstr "Verfasst von %2$s und veröffentlicht im %3$s, abgelegt unter %1$s."
 
 #: patterns/sidebar.php:76
 msgid "Tags"

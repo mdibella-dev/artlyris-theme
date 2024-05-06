@@ -9,7 +9,8 @@
 
 .site-component-sidebar-tool {
     font-family: var(--wp--preset--font-family--open-sans);
-    font-size: var(--wp--preset--font-size--small);
+    font-size: 70%;
+    line-height: 1.7;
 
     & + & {
         margin-top: 2rem;
@@ -29,7 +30,7 @@
     color: var(--wp--preset--color--dark-blue);
     width: 100%;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 1rem !important;
     display: flex;
     flex-wrap: nowrap;
     align-items: baseline;
@@ -51,17 +52,15 @@
 
 
 
-.site-component-sidebar-tool > .wp-block-heading + * {
+.site-component-sidebar-tool > *:not(.wp-block-heading) {
     margin: 0;
     padding-left: 1rem !important;
-    padding-top: 1rem !important;
 }
 
 
 .site-component-sidebar-tool a {
-    font-size: 75%;
     font-weight: 400;
+    font-family: var(--wp--preset--font-family--open-sans);
     text-transform: uppercase;
-    line-height: 1.4;
     letter-spacing: 1px;
 }
