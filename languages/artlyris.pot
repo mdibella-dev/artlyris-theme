@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ARTlyris\n"
-"POT-Creation-Date: 2024-05-05 12:55+0200\n"
+"POT-Creation-Date: 2024-05-06 19:44+0200\n"
 "PO-Revision-Date: 2024-04-03 18:44+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -20,6 +20,11 @@ msgstr ""
 "_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#. Theme Name of the plugin/theme
+#: includes/block-editor.php:52
+msgid "ARTlyris"
+msgstr ""
 
 #: patterns/archive-title.php:18
 msgid "Category"
@@ -61,20 +66,25 @@ msgstr ""
 msgid "Works"
 msgstr ""
 
-#: patterns/header-navigation.php:35 patterns/sidebar.php:65
+#: patterns/header-navigation.php:35 patterns/sidebar.php:123
 msgid "Editions"
 msgstr ""
 
-#: patterns/sidebar.php:19
+#: patterns/sidebar.php:48
+msgid "Info"
+msgstr ""
+
+#: patterns/sidebar.php:54
+#, php-format
+msgid "%1$s by %2$s, published in %3$s"
+msgstr ""
+
+#: patterns/sidebar.php:76
 msgid "Tags"
 msgstr ""
 
-#: patterns/sidebar.php:112
+#: patterns/sidebar.php:174
 msgid "Categories"
-msgstr ""
-
-#. Theme Name of the plugin/theme
-msgid "ARTlyris"
 msgstr ""
 
 #. Theme URI of the plugin/theme

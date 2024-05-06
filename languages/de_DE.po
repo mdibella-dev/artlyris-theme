@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ARTlyris\n"
-"POT-Creation-Date: 2024-05-05 12:55+0200\n"
-"PO-Revision-Date: 2024-05-05 12:58+0200\n"
+"POT-Creation-Date: 2024-05-06 19:43+0200\n"
+"PO-Revision-Date: 2024-05-06 19:44+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -19,6 +19,11 @@ msgstr ""
 "_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#. Theme Name of the plugin/theme
+#: includes/block-editor.php:52
+msgid "ARTlyris"
+msgstr "ARTlyris"
 
 #: patterns/archive-title.php:18
 msgid "Category"
@@ -60,21 +65,26 @@ msgstr "Autoren"
 msgid "Works"
 msgstr "Werke"
 
-#: patterns/header-navigation.php:35 patterns/sidebar.php:65
+#: patterns/header-navigation.php:35 patterns/sidebar.php:123
 msgid "Editions"
 msgstr "Editionen"
 
-#: patterns/sidebar.php:19
+#: patterns/sidebar.php:48
+msgid "Info"
+msgstr "Info"
+
+#: patterns/sidebar.php:54
+#, php-format
+msgid "%1$s by %2$s, published in %3$s"
+msgstr "%1$s von %2$s, veröffentlicht im %3$s"
+
+#: patterns/sidebar.php:76
 msgid "Tags"
 msgstr "Stichworte"
 
-#: patterns/sidebar.php:112
+#: patterns/sidebar.php:174
 msgid "Categories"
 msgstr "Kategorien"
-
-#. Theme Name of the plugin/theme
-msgid "ARTlyris"
-msgstr "ARTlyris"
 
 #. Theme URI of the plugin/theme
 msgid "https://github.com/mdibella-dev/artlyris/"
