@@ -35,3 +35,10 @@
 
 </div>
 <!-- /wp:group -->
+
+<!-- wp:group {"align":"full","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull">
+
+
+</div>
+<!-- /wp:group -->
