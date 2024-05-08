@@ -13,28 +13,20 @@
     <!-- wp:columns {"style":{"spacing":{"blockGap":"4rem"}}} -->
     <div class="wp-block-columns">
 
-        <!-- wp:column {"width":"75%","className":"site-component-content"} -->
-        <div class="wp-block-column site-component-content" style="flex-basis:75%">
+        <!-- wp:column {"width":"75%","className":"site-component-content","tagName":"article"} -->
+        <article class="wp-block-column site-component-content" style="flex-basis:75%">
 
-            <!-- wp:group {"tagName":"article"} -->
-            <article class="wp-block-group">
+            <!-- wp:post-content /-->
 
-                <!-- wp:post-content /-->
-
-                <!-- wp:pattern {"slug":"artlyris-theme/single-author-info"} /-->
-
-            </article>
-            <!-- /wp:group -->
-
-        </div>
+        </article>
         <!-- /wp:column -->
 
-        <!-- wp:column {"width":"25%","className":"site-component-sidebar"} -->
-        <div class="wp-block-column site-component-sidebar" style="flex-basis:25%">
+        <!-- wp:column {"width":"25%","className":"site-component-sidebar","tagName":"aside","layout":{"type":"flex","orientation":"vertical"},"style":{"spacing":{"blockGap":"2.5rem"}}} -->
+        <aside class="wp-block-column site-component-sidebar" style="flex-basis:25%">
 
             <!-- wp:pattern {"slug":"artlyris-theme/sidebar"} /-->
 
-        </div>
+        </aside>
         <!-- /wp:column -->
 
     </div>
