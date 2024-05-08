@@ -9,16 +9,9 @@
 
 .site-component-sidebar-tool {
     font-family: var(--wp--preset--font-family--open-sans);
-    font-size: 70%;
+    font-size: var(--wp--preset--font-size--x-small);
     line-height: 1.7;
-
-    & + & {
-        margin-top: 2rem;
-
-        @include on_breakpoint(medium) {
-            margin-top: 4rem;
-        }
-    }
+    width: 100%;
 }
 
 
@@ -54,7 +47,7 @@
 
 .site-component-sidebar-tool > *:not(.wp-block-heading) {
     margin: 0;
-    padding-left: 1rem !important;
+    padding: 0;
 }
 
 
