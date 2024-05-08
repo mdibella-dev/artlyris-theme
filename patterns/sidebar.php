@@ -11,7 +11,7 @@
 <!-- wp:group {"className":"site-component-sidebar-tool"} -->
 <div class="wp-block-group site-component-sidebar-tool">
 
-    <!-- wp:columns -->
+    <!-- wp:columns {"style":{"spacing":{"blockGap":"1rem"}}} -->
     <div class="wp-block-columns">
 
         <!-- wp:column {"width":"40px"} -->
@@ -33,11 +33,10 @@
     </div>
     <!-- /wp:columns -->
 
-    <!-- wp:post-author-biography /-->
+    <!-- wp:post-author-biography {"style":{"spacing":{"margin":{"top":"1.5em"}}}} /-->
+
 </div>
 <!-- /wp:group -->
-
-
 
 
 <?php
