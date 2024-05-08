@@ -15,20 +15,14 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
-    gap: 0;
+    gap: 1.5rem;
     list-style: none;
     padding-left: 0;
 }
 
 
 .site-component-header-navigation-item {
-    padding: 1px .75rem;
-    border-right: 1px solid var(--wp--preset--color--blue);
     line-height: 0;
-
-    &:last-of-type {
-        border-right: unset;
-    }
 }
 
 
