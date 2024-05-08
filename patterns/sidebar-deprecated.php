@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Sidebar
- * Slug: artlyris-theme/sidebar
+ * Slug: artlyris-theme/sidebar-deprecated
  * Categories: sidebar, artlyris-patterns
  */
 ?>
