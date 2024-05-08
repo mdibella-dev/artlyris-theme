@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Sidebar
- * Slug: artlyris-theme/sidebar-alt
+ * Slug: artlyris-theme/sidebar
  * Categories: sidebar, artlyris-patterns
  */
 ?>
@@ -102,33 +102,25 @@ if ( has_term( '', 'edition') ) {
 
             <?php
             foreach ( $editions as $edition ) {
+                $post_thumbnail_id = get_post_thumbnail_id( $edition );
+
+                if ( $post_thumbnail_id ) {
+                    $post_thumbnail_url = get_the_post_thumbnail_url( $edition, 'full' );
+                    $post_thumbnail_alt = get_post_meta( $post_thumbnail_id, '_wp_attachment_image_alt', true);
             ?>
 
-        <!-- wp:paragraph -->
-        <p>
-            <a href="<?php echo get_permalink( $edition ); ?>"><?php
-
-            $post_thumbnail_id = get_post_thumbnail_id( $edition );
-
-            if ( $post_thumbnail_id ) {
-                $post_thumbnail_url = get_the_post_thumbnail_url( $edition, 'full' );
-                $post_thumbnail_alt = get_post_meta( $post_thumbnail_id, '_wp_attachment_image_alt', true);
-            ?>
-
-            <!-- wp:image {"id":<?php echo $post_thumbnail_id; ?>,"sizeSlug":"full","linkDestination":"none","align":"center",className:"edition-image"} -->
-            <figure class="edition-image wp-block-image aligncenter size-full"><img src="<?php echo $post_thumbnail_url; ?>" alt="<?php echo $post_thumbnail_alt; ?>"/></figure>
-            <!-- /wp:image -->
+        <!-- wp:image {"id":<?php echo $post_thumbnail_id; ?>,"sizeSlug":"full","align":"center",className:"edition-image"} -->
+        <figure class="edition-image wp-block-image aligncenter size-full">
+            <a href="<?php echo get_permalink( $edition ); ?>">
+                <img src="<?php echo $post_thumbnail_url; ?>" alt="<?php echo $post_thumbnail_alt; ?>"/>
+            </a>
+        </figure>
+        <!-- /wp:image -->
 
             <?php
-            }
-            ?></a>
-        </p>
-        <!-- /wp:paragraph -->
-
-            <?php
+                }
             }
             ?>
-
     </div>
     <!-- /wp:group -->
 
@@ -139,16 +131,3 @@ if ( has_term( '', 'edition') ) {
     }
 }
 ?>
-
-
-<!-- wp:group {"className":"site-component-sidebar-tool"} -->
-<div class="wp-block-group site-component-sidebar-tool">
-
-    <!-- wp:heading {"level":6,"className":"is-style-sidebar-tool"} -->
-    <h6 class="wp-block-heading is-style-sidebar-tool"><span class="line"></span><span class="label"><?php echo __( 'Categories', 'artlyris' ); ?></span><span class="line"></span></h6>
-    <!-- /wp:heading -->
-
-    <!-- wp:categories /-->
-
-</div>
-<!-- /wp:group -->
