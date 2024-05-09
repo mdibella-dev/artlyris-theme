@@ -17,7 +17,7 @@
         <!-- wp:column {"width":"40px"} -->
         <div class="wp-block-column" style="flex-basis:40px">
 
-            <!-- wp:avatar {"size":40} /-->
+            <!-- wp:avatar {"size":40,"style":{"border":{"radius":"3px"}}} /-->
 
         </div>
         <!-- /wp:column -->
