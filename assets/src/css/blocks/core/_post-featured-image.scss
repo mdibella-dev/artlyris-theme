@@ -1,0 +1,19 @@
+/**
+ * Block: core/post-featured-image
+ *
+ * @author  Marco Di Bella
+ * @package ARTlyris
+ */
+
+
+
+.wp-block-post-featured-image a img {
+    //filter: grayscale(1);
+    filter: sepia(100%) hue-rotate(-10deg);
+    transition: all .3s;
+
+    &:hover,
+    &:focus {
+        filter: initial;
+    }
+}
