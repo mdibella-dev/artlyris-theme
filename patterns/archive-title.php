@@ -6,31 +6,33 @@
  */
 ?>
 
-<!-- wp:group {"align":"full","backgroundColor":"pale-dark-gray","layout":{"type":"constrained"},"spacing":{"padding":{"left":"style|root|padding|left","right":"style|root|padding|right"},"margin":{"bottom":"custom|main|padding-top"}}} -->
-<div class="wp-block-group alignfull has-pale-dark-gray-background-color has-background" style="padding-left:var(--wp--style--root--padding-left);padding-right:var(--wp--style--root--padding-right);margin-bottom:var(--wp--custom--main--padding-top);height:clamp(150px,24vh,200px);display:flex;flex-wrap:wrap;justify-content:flex-start;align-content:center;align-items:center;">
+<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|50","bottom":"var:preset|spacing|70"},"padding":{"right":"var:preset|spacing|40","left":"var:preset|spacing|40"}}},"layout":{"type":"flex","orientation":"vertical","justifyContent":"center"}} -->
+<div class="wp-block-group" style="margin-top:var(--wp--preset--spacing--50);margin-bottom:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">
 
-    <!-- wp:paragraph {"style":{"spacing":{"margin":"0","padding":"0"}}} -->
-    <p style="padding:0;margin:0;width:100%;"><em><?php
+    <!-- wp:group {"style":{"spacing":{"blockGap":"0"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"left"}} -->
+    <div class="wp-block-group" style="gap:0">
 
-    if ( is_archive() ) {
+        <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","bottom":"-24px"},"padding":"0"}}} -->
+        <p style="padding:0;margin-top:0;margin-bottom:-24px;width:100%;"><em><?php
 
-        if ( is_category() ) {
-            echo __( 'Category', 'artlyris' );
-        } elseif ( is_tag() ) {
-            echo __( 'Tag', 'artlyris' );
-        } else {
-            echo __( 'Archive', 'artlyris' );
+        if ( is_archive() ) {
+
+            if ( is_category() ) {
+                echo __( 'Category', 'artlyris' );
+            } elseif ( is_tag() ) {
+                echo __( 'Tag', 'artlyris' );
+            } elseif ( is_author() ) {
+                echo __( 'Author Archive', 'artlyris' );
+            } else {
+                echo __( 'Archive', 'artlyris' );
+            }
+
         }
 
-    }
+        ?></em></p>
+        <!-- /wp:paragraph -->
 
-    ?></em></p>
-    <!-- /wp:paragraph -->
-
-    <!-- wp:group {"spacing":{"margin":{"top":"0"}}} -->
-    <div class="wp-block-group" style="width:100%;margin-top:0;">
-
-        <!-- wp:query-title {"type":"archive","textAlign":"left","showPrefix":false,"style":{"typography":{"fontStyle":"normal","fontWeight":"100","textTransform":"uppercase"},"spacing":{"padding":"0"}},"fontSize":"large","fontFamily":"open-sans"} /-->
+        <!-- wp:query-title {"type":"archive","textAlign":"center","showPrefix":false,"style":{"typography":{"fontStyle":"normal","fontWeight":"200"}},"fontSize":"x-large"} /-->
 
     </div>
     <!-- /wp:group -->

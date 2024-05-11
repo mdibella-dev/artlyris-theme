@@ -2,7 +2,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ARTlyris\n"
-"POT-Creation-Date: 2024-05-06 19:59+0200\n"
+"POT-Creation-Date: 2024-05-11 17:08+0200\n"
 "PO-Revision-Date: 2024-04-03 18:44+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.4.4\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
@@ -26,15 +26,19 @@ msgstr ""
 msgid "ARTlyris"
 msgstr ""
 
-#: patterns/archive-title.php:18
+#: patterns/archive-title.php:21
 msgid "Category"
 msgstr ""
 
-#: patterns/archive-title.php:20
+#: patterns/archive-title.php:23
 msgid "Tag"
 msgstr ""
 
-#: patterns/archive-title.php:22
+#: patterns/archive-title.php:25
+msgid "Author Archive"
+msgstr ""
+
+#: patterns/archive-title.php:27
 msgid "Archive"
 msgstr ""
 
@@ -66,24 +70,26 @@ msgstr ""
 msgid "Works"
 msgstr ""
 
-#: patterns/header-navigation.php:35 patterns/sidebar.php:123
+#: patterns/header-navigation.php:35 patterns/sidebar-deprecated.php:123
+#: patterns/sidebar.php:96
 msgid "Editions"
 msgstr ""
 
-#: patterns/sidebar.php:48
+#: patterns/sidebar-deprecated.php:48
 msgid "Info"
 msgstr ""
 
-#: patterns/sidebar.php:54
+#: patterns/sidebar-deprecated.php:54
 #, php-format
-msgid "written by %2$s,<br>published in %3$s,<br>filed under %1$s"
+msgid "Written by %2$s and published in %3$s, filed under %1$s."
 msgstr ""
 
-#: patterns/sidebar.php:76
+#: patterns/sidebar-deprecated.php:76 patterns/sidebar.php:49
 msgid "Tags"
 msgstr ""
 
-#: patterns/sidebar.php:174
+#: patterns/sidebar-deprecated.php:174
+#: patterns/single-author-info-deprecated.php:53
 msgid "Categories"
 msgstr ""
 
