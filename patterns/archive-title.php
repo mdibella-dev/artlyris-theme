@@ -12,8 +12,8 @@
     <!-- wp:group {"style":{"spacing":{"blockGap":"0"},"layout":{"type":"flex","orientation":"vertical","justifyContent":"left"}} -->
     <div class="wp-block-group" style="gap:0">
 
-        <!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"0","bottom":"-24px"},"padding":"0"}}} -->
-        <p style="padding:0;margin-top:0;margin-bottom:-24px;width:100%;"><em><?php
+        <!-- wp:paragraph {"fontFamily":"playfair","style":{"spacing":{"margin":{"top":"0","bottom":"-24px"},"padding":"0"}}} -->
+        <p class="has-playfair-font-family" style="padding:0;margin-top:0;margin-bottom:-24px;width:100%;"><em><?php
 
         if ( is_archive() ) {
 
