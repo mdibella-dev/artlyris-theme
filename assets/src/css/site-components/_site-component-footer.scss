@@ -23,12 +23,7 @@
 
 .site-component-footer-navigation-item {
     padding: 1px .5rem;
-    border-right: 1px solid var(--wp--preset--color--blue);
     line-height: 0;
-
-    &:last-of-type {
-        border-right: unset;
-    }
 }
 
 
