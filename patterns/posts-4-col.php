@@ -23,6 +23,7 @@
 
         <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"4/3"} /-->
         <!-- wp:post-title {"isLink":true,"textAlign":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"400","textTransform":"uppercase"},"spacing":{"margin":{"bottom":"0"}}},"fontSize":"small","fontFamily":"open-sans"} /-->
+        <!-- wp:pattern {"slug":"artlyris-theme/post-category-terms"} /-->
 
     <!-- /wp:post-template -->
 
