@@ -1,5 +1,5 @@
 # ARTlyris
-WordPress theme for the ARTlyris website
+WordPress theme for the ARTlyris website.
 
 <br>
 
