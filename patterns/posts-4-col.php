@@ -22,7 +22,13 @@
     <!-- wp:post-template {"align":"full","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"grid","columnCount":4}} -->
 
         <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"4/3","style":{"border":{"radius":"3px"}}} /-->
-        <!-- wp:post-title {"isLink":true,"textAlign":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"400","textTransform":"uppercase"},"spacing":{"margin":{"bottom":"0"}}},"fontSize":"small","fontFamily":"open-sans"} /-->
+
+        <!-- wp:group {"dimensions":{"minHeight":"2.25em"}} -->
+        <div class="wp-block-group" style="min-height: 2.25em;">
+            <!-- wp:post-title {"isLink":true,"textAlign":"center","style":{"typography":{"fontStyle":"normal","fontWeight":"400","textTransform":"uppercase"},"spacing":{"margin":{"bottom":"0"}}},"fontSize":"small","fontFamily":"open-sans"} /-->
+        </div>
+        <!-- /wp:group -->
+
         <!-- wp:pattern {"slug":"artlyris-theme/post-category-terms"} /-->
 
     <!-- /wp:post-template -->
