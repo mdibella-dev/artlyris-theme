@@ -265,7 +265,6 @@
             "text": "var(--wp--custom--color--primary)"
         },
         "typography": {
-            "fontSize": "1.5rem",
             "fontFamily": "var(--wp--preset--font-family--cormorant)",
             "fontSize": "var(--wp--preset--font-size--medium)",
             "lineHeight": "1.6"
