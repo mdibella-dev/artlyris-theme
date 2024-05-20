@@ -357,6 +357,13 @@
             "postTypes": [
                 "page"
             ]
+        },
+        {
+            "name": "authorslist",
+            "title": "Autorenliste",
+            "postTypes": [
+                "page"
+            ]
         }
     ]
 }
