@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: List of posts, 4 columns
- * Slug: artlyris-theme/posts-4-col
+ * Slug: artlyris-theme/query-posts-4-col
  * Categories: query
  * Block Types: core/query
  */
