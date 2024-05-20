@@ -16,13 +16,6 @@
         <li class="site-component-footer-navigation-item">
             <a class="site-component-footer-navigation-item__content" href="/home/"><?php echo __( 'Home', 'artlyris' ); ?></a>
         </li>
-        <!-- /wp:list-item -->
-
-        <!-- wp:list-item {"className":"site-component-footer-navigation-item"} -->
-        <li class="site-component-footer-navigation-item">
-            <a class="site-component-footer-navigation-item__content" href="/ueber-uns/"><?php echo __( 'About', 'artlyris' ); ?></a>
-        </li>
-        <!-- /wp:list-item -->
 
         <!-- wp:list-item {"className":"site-component-footer-navigation-item"} -->
         <li class="site-component-footer-navigation-item">
