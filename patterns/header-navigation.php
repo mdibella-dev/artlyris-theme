@@ -20,7 +20,7 @@
 
         <!-- wp:list-item {"className":"site-component-header-navigation-item"} -->
         <li class="site-component-header-navigation-item">
-            <a class="site-component-header-navigation-item__content" href="#"><?php echo __( 'Authors', 'artlyris' ); ?></a>
+            <a class="site-component-header-navigation-item__content" href="/autoren/"><?php echo __( 'Authors', 'artlyris' ); ?></a>
         </li>
         <!-- /wp:list-item -->
 
