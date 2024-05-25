@@ -19,7 +19,7 @@
     <div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
     <!-- /wp:spacer -->
 
-    <!-- wp:post-template {"align":"full","style":{"spacing":{"blockGap":"var(--wp--preset--spacing--60)"}},"layout":{"type":"grid","columnCount":4}} -->
+    <!-- wp:post-template {"align":"full","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"grid","columnCount":4}} -->
 
         <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"4/3","style":{"border":{"radius":"3px"}}} /-->
 
