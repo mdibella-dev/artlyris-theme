@@ -117,6 +117,22 @@
             </div>
             <!-- /wp:column -->
 
+            <!-- wp:column {"verticalAlignment":"center"} -->
+            <div class="wp-block-column is-vertically-aligned-center">
+
+                <!-- wp:group {"className":"authors-list-item__cats"} -->
+                <div class="wp-block-group authors-list-item__cats"><?php
+
+                $count = count_user_posts( $author );
+
+                printf( _n( '%s work', '%s works', $count, 'artlyris' ), $count );
+
+                ?></div>
+                <!-- /wp:group -->
+
+            </div>
+            <!-- /wp:column -->
+
         </div>
         <!-- /wp:columns -->
 
