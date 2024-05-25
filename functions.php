@@ -36,3 +36,4 @@ require_once THEME_DIR . 'includes/block-styles.php';
 require_once THEME_DIR . 'includes/block-editor.php';
 
 require_once THEME_DIR . 'includes/thumbnail-fallback.php';
+require_once THEME_DIR . 'includes/register/index.php';

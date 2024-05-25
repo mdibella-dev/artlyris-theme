@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: ARTlyris\n"
-"POT-Creation-Date: 2024-05-24 16:53+0200\n"
-"PO-Revision-Date: 2024-05-24 16:53+0200\n"
+"POT-Creation-Date: 2024-05-25 14:57+0200\n"
+"PO-Revision-Date: 2024-05-25 14:57+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -26,6 +26,22 @@ msgstr ""
 msgid "ARTlyris"
 msgstr "ARTlyris"
 
+#: includes/register/taxonomies/taxonomy-editions.php:27
+#: includes/register/taxonomies/taxonomy-editions.php:29
+#: includes/register/taxonomies/taxonomy-editions.php:34
+#: patterns/header-navigation.php:35 patterns/sidebar-deprecated.php:123
+#: patterns/sidebar.php:96
+msgid "Editions"
+msgstr "Editionen"
+
+#: includes/register/taxonomies/taxonomy-editions.php:28
+msgid "Edition"
+msgstr "Edition"
+
+#: includes/register/taxonomies/taxonomy-editions.php:30
+msgid "All editions"
+msgstr "Alle Editionen"
+
 #: patterns/archive-title.php:21
 msgid "Category"
 msgstr "Kategorie"
@@ -42,7 +58,7 @@ msgstr "Autorenarchiv"
 msgid "Archive"
 msgstr "Archiv"
 
-#: patterns/authors-list.php:126
+#: patterns/authors-list.php:128
 #, php-format
 msgid "%s work"
 msgid_plural "%s works"
@@ -76,11 +92,6 @@ msgstr "Autoren"
 #: patterns/header-navigation.php:29
 msgid "Works"
 msgstr "Werke"
-
-#: patterns/header-navigation.php:35 patterns/sidebar-deprecated.php:123
-#: patterns/sidebar.php:96
-msgid "Editions"
-msgstr "Editionen"
 
 #: patterns/sidebar-deprecated.php:48
 msgid "Info"
