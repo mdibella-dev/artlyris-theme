@@ -8,11 +8,7 @@
 
 
 .authors-list {
-    gap: 2rem;
-
-    @include on_breakpoint(medium) {
-        gap: 4rem;
-    }
+    gap: 4rem;
 }
 
 
@@ -36,11 +32,21 @@
 
 
 .authors-list-item__cats,
-.authors-list-item__cats a {
-    color: var(--wp--preset--color--dark-blue);
-    font-style: italic;
-    font-family: var(--wp--preset--font-family--playfair);
-    font-size: var(--wp--preset--font-size--small);
+.authors-list-item__works {
+    &,
+    & a {
+        color: var(--wp--preset--color--dark-blue);
+        font-style: italic;
+        font-family: var(--wp--preset--font-family--playfair);
+        font-size: var(--wp--preset--font-size--small);
+    }
+}
+
+
+.authors-list-item__works {
+    @include on_breakpoint(medium) {
+        text-align: right;
+    }
 }
 
 

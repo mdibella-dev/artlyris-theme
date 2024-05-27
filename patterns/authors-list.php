@@ -120,8 +120,8 @@
             <!-- wp:column {"verticalAlignment":"center"} -->
             <div class="wp-block-column is-vertically-aligned-center">
 
-                <!-- wp:group {"className":"authors-list-item__cats"} -->
-                <div class="wp-block-group authors-list-item__cats"><?php
+                <!-- wp:group {"className":"authors-list-item__works"} -->
+                <div class="wp-block-group authors-list-item__works"><?php
 
                 $count = count_user_posts( $author );
 
