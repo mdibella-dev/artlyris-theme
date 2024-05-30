@@ -9,23 +9,23 @@
 <!-- wp:group {"className":"site-component-footer-navigation","tagName":"nav"} -->
 <nav class="wp-block-group site-component-footer-navigation">
 
-    <!-- wp:list {"className":"site-component-footer-navigation-item-wrapper"} -->
-    <ul class="site-component-footer-navigation-item-wrapper">
+    <!-- wp:list {"className":"site-component-footer-navigation__items"} -->
+    <ul class="site-component-footer-navigation__items">
 
-        <!-- wp:list-item {"className":"site-component-footer-navigation-item"} -->
-        <li class="site-component-footer-navigation-item">
-            <a class="site-component-footer-navigation-item__content" href="/home/"><?php echo __( 'Home', 'artlyris' ); ?></a>
+        <!-- wp:list-item {"className":"site-component-footer-navigation__item"} -->
+        <li class="site-component-footer-navigation__item">
+            <a class="site-component-footer-navigation__link" href="/home/"><?php echo __( 'Home', 'artlyris' ); ?></a>
         </li>
 
-        <!-- wp:list-item {"className":"site-component-footer-navigation-item"} -->
-        <li class="site-component-footer-navigation-item">
-            <a class="site-component-footer-navigation-item__content" href="/impressum/"><?php echo __( 'Imprint', 'artlyris' ); ?></a>
+        <!-- wp:list-item {"className":"site-component-footer-navigation__item"} -->
+        <li class="site-component-footer-navigation__item">
+            <a class="site-component-footer-navigation__link" href="/impressum/"><?php echo __( 'Imprint', 'artlyris' ); ?></a>
         </li>
         <!-- /wp:list-item -->
 
-        <!-- wp:list-item {"className":"site-component-footer-navigation-item"} -->
-        <li class="site-component-footer-navigation-item">
-            <a class="site-component-footer-navigation-item__content" href="/datenschutz/"><?php echo __( 'Privacy Policy', 'artlyris' ); ?></a>
+        <!-- wp:list-item {"className":"site-component-footer-navigation__item"} -->
+        <li class="site-component-footer-navigation__item">
+            <a class="site-component-footer-navigation__link" href="/datenschutz/"><?php echo __( 'Privacy Policy', 'artlyris' ); ?></a>
         </li>
         <!-- /wp:list-item -->
 

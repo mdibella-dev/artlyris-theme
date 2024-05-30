@@ -11,7 +11,7 @@
  * .site-component-footer-navigation
  */
 
-.site-component-footer-navigation-item-wrapper {
+.site-component-footer-navigation__items {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -21,13 +21,13 @@
 }
 
 
-.site-component-footer-navigation-item {
+.site-component-footer-navigation__item {
     padding: 1px .5rem;
     line-height: 0;
 }
 
 
-.site-component-footer-navigation-item__content,
+.site-component-footer-navigation__link,
 .site-component-footer-artdesign {
     font-family: var(--wp--preset--font-family--open-sans);
     font-size: 50%;
