@@ -44,15 +44,23 @@ window.addEventListener( 'resize', (event) => { setHeaderHeightVar(); } );
 document.addEventListener( 'DOMContentLoaded', (event) => {
 
     const edition_images = document.querySelectorAll( '.edition-image--animate-fade-in' );
+    const edition_links  = document.querySelectorAll( '.edition-image--animate-fade-in + .edition-image-link' );
 
-    edition_images.forEach( edition_image => {
-
-        anime( {
-            targets: edition_image,
-            opacity: 1,
-            translateY: -50,
-            duration: 750,
-            easing: 'easeInOutQuad'
-        } );
+    anime( {
+        targets: edition_images,
+        duration: 750,
+        opacity: 1,
+        translateY: -50,
+        easing: 'easeInOutQuad'
     } );
+
+    anime( {
+        targets: edition_links,
+        duration: 550,
+        opacity: 1,
+        translateY: -50,
+        easing: 'easeInOutQuad',
+        delay: 200
+    } );
+
 } );

@@ -13,6 +13,7 @@
 }
 
 
-.edition-image--animate-fade-in {
+.edition-image--animate-fade-in,
+.edition-image--animate-fade-in + .edition-image-link {
     opacity: 0;
 }
