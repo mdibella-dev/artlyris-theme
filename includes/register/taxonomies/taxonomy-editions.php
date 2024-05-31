@@ -3,7 +3,7 @@
  * Custom taxonomy: editions.
  *
  * @author  Marco Di Bella
- * @package artlyris
+ * @package ARTlyris
  */
 
 namespace artlyris\taxonomies\editions;
@@ -41,13 +41,13 @@ function register() {
         'show_in_nav_menus'     => false,
         'query_var'             => true,
         'rewrite'               => [
-            'slug'       => 'edition',
+            'slug'       => 'editions',
             'with_front' => true,
         ],
         'show_admin_column'     => true,
         'show_in_rest'          => true,
         'show_tagcloud'         => true,
-        'rest_base'             => 'edition',
+        'rest_base'             => 'editions',
         'rest_controller_class' => 'WP_REST_Terms_Controller',
         'rest_namespace'        => 'wp/v2',
         'show_in_quick_edit'    => false,
@@ -55,7 +55,7 @@ function register() {
         'show_in_graphql'       => false,
     ];
 
-    register_taxonomy( 'edition', ['post','page'], $args );
+    register_taxonomy( 'edition', ['post','page','edition'], $args );
 }
 
 add_action( 'init', __NAMESPACE__ . '\register' );
