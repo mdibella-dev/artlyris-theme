@@ -27,6 +27,9 @@ function post_thumbnail_fallback_html( $html, $post_id, $post_thumbnail_id, $siz
     if ( empty( $html ) ) {
 
         $path = THEME_URI . 'assets/img/placeholder-01.png';
+
+        $attr = array_merge( ['alt'=>'', 'style'=>''], $attr );
+
         $html = sprintf(
             '<img class="%1$s" width="%2$s" height="%3$s" src="%4$s" alt="%5$s" style="%6$s">',
             implode( ',', ['wp-post-image', 'size' . $size] ),
