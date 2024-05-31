@@ -26,7 +26,6 @@
             } else {
                 echo __( 'Archive', 'artlyris' );
             }
-
         }
 
         ?></em></p>
