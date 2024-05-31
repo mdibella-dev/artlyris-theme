@@ -1,6 +1,6 @@
 <?php
 /**
- * Title: List of authors
+ * Title: List of Authors
  * Slug: artlyris-theme/authors-list
  * Categories: query
  */
