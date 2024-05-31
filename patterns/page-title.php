@@ -17,7 +17,7 @@
 
         if( is_page_template( 'editions-list' ) ) {
             echo __( 'Overview', 'artlyris' );
-        } else if( is_page_template( 'authors-list' ) ) {
+        } else if( is_page_template( 'authors-list' ) or is_page_template( 'works-list' ) ) {
             echo __( 'From A to Z', 'artlyris' );
         }
 

@@ -26,7 +26,7 @@
 
         <!-- wp:list-item {"className":"site-component-header-navigation__desktop-item"} -->
         <li class="site-component-header-navigation__desktop-item">
-            <a class="site-component-header-navigation__desktop-link" href="#"><?php echo __( 'Works', 'artlyris' ); ?></a>
+            <a class="site-component-header-navigation__desktop-link" href="/werke/"><?php echo __( 'Works', 'artlyris' ); ?></a>
         </li>
         <!-- /wp:list-item -->
 

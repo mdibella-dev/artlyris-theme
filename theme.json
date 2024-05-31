@@ -358,14 +358,21 @@
         },
         {
             "name": "authors-list",
-            "title": "Liste der Autoren",
+            "title": "Liste aller Autoren",
             "postTypes": [
                 "page"
             ]
         },
         {
             "name": "editions-list",
-            "title": "Liste der Editionen",
+            "title": "Liste aller Editionen",
+            "postTypes": [
+                "page"
+            ]
+        },
+        {
+            "name": "works-list",
+            "title": "Liste aller Werke",
             "postTypes": [
                 "page"
             ]
