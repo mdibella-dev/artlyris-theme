@@ -354,9 +354,7 @@
         {
             "name": "edition",
             "title": "Edition",
-            "postTypes": [
-                "page"
-            ]
+            "postTypes": ["edition"]
         },
         {
             "name": "authors-list",
