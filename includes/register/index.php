@@ -5,6 +5,7 @@ defined( 'ABSPATH' ) or exit;
 
 
 // Custom Post Types
+require_once 'post-types/post-type-edition.php';
 
 
 // Custom Taxonomies
