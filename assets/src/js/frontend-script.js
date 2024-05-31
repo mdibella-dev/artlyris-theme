@@ -43,20 +43,16 @@ window.addEventListener( 'resize', (event) => { setHeaderHeightVar(); } );
 
 document.addEventListener( 'DOMContentLoaded', (event) => {
 
-    if ( document.querySelector( 'body' ).classList.contains( 'page-template-edition' ) ) {
+    const edition_images = document.querySelectorAll( '.edition-image--animate-fade-in' );
 
-        const edition_image = document.querySelector( '.edition-image--animate-fade-in' );
+    edition_images.forEach( edition_image => {
 
-        if ( edition_image != null ) {
-
-            anime( {
-                targets: edition_image,
-                opacity: 1,
-                translateY: -50,
-                duration: 750,
-                easing: 'easeInOutQuad'
-            } );
-
-        }
-    }
+        anime( {
+            targets: edition_image,
+            opacity: 1,
+            translateY: -50,
+            duration: 750,
+            easing: 'easeInOutQuad'
+        } );
+    } );
 } );
