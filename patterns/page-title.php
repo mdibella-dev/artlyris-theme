@@ -1,7 +1,7 @@
 <?php
 /**
- * Title: Authors Title
- * Slug: artlyris-theme/authors-title
+ * Title: Page title
+ * Slug: artlyris-theme/page-title
  * Categories: artlyris-patterns
  */
 ?>
@@ -13,9 +13,13 @@
     <div class="wp-block-group" style="gap:0">
 
         <!-- wp:paragraph {"fontFamily":"playfair","style":{"spacing":{"margin":{"top":"0"},"padding":"0"}}} -->
-        <p class="has-playfair-font-family" style="padding:0;margin-top:0;width:100%;"><em><?php
+        <p class="has-playfair-font-family" style="padding:0;margin-top:0;"><em><?php
 
-        echo __( 'From A to Z', 'artlyris' );
+        if( is_page_template( 'editions-list' ) ) {
+            echo __( 'Overview', 'artlyris' );
+        } else if( is_page_template( 'authors-list' ) ) {
+            echo __( 'From A to Z', 'artlyris' );
+        }
 
         ?></em></p>
         <!-- /wp:paragraph -->
