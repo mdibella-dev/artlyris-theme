@@ -21,7 +21,7 @@
 
     <!-- wp:post-template {"align":"full","style":{"spacing":{"blockGap":"var:preset|spacing|50"}},"layout":{"type":"grid","columnCount":4}} -->
 
-        <!-- wp:post-terms {"term":"category","fontSize":"small","fontFamily":"playfair","style":{"spacing":{"margin":{"blockStart":"0"}},"typography":{"fontStyle":"italic"},"elements":{"link":{"color":{"text":"var:preset|color|dark-blue"}}}}} /-->
+        <!-- wp:post-terms {"term":"category","fontSize":"small","fontFamily":"playfair","style":{"spacing":{"margin":{"blockStart":"0","bottom":"4px"}},"typography":{"fontStyle":"italic"},"elements":{"link":{"color":{"text":"var:preset|color|dark-blue"}}}}} /-->
 
         <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"4/3","style":{"border":{"radius":"3px"}}} /-->
 
