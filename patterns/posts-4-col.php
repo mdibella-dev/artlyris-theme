@@ -8,7 +8,6 @@
 ?>
 
 <!-- wp:query {"query":{"perPage":12,"pages":0,"offset":"0","postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true}","layout":{"type":"default"}} -->
-<div class="wp-block-query">
 
     <!-- wp:query-pagination {"paginationArrow":"arrow","layout":{"type":"flex","justifyContent":"center"},"style":{"typography":{"fontStyle":"normal","fontWeight":"400","textTransform":"uppercase"}},"fontSize":"small","fontFamily":"open-sans"} -->
         <!-- wp:query-pagination-previous /-->
@@ -42,5 +41,4 @@
         <!-- wp:query-pagination-next /-->
     <!-- /wp:query-pagination -->
 
-</div>
 <!-- /wp:query -->
