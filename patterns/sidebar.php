@@ -40,13 +40,33 @@
 
 
 <?php
+if ( has_category() ) {
+?>
+<!-- wp:group {"className":"site-component-sidebar-tool"} -->
+<div class="wp-block-group site-component-sidebar-tool">
+
+    <!-- wp:heading {"level":6,"className":"is-style-sidebar-tool"} -->
+    <h6 class="wp-block-heading is-style-sidebar-tool"><span class="label"><?php echo __( 'Categories', 'artlyris' ); ?></span><span class="line"></span></h6>
+    <!-- /wp:heading -->
+
+    <!-- wp:post-terms {"term":"category"} /-->
+
+</div>
+<!-- /wp:group -->
+
+<?php
+}
+?>
+
+
+<?php
 if ( has_tag() ) {
 ?>
 <!-- wp:group {"className":"site-component-sidebar-tool"} -->
 <div class="wp-block-group site-component-sidebar-tool">
 
     <!-- wp:heading {"level":6,"className":"is-style-sidebar-tool"} -->
-    <h6 class="wp-block-heading is-style-sidebar-tool"><span class="line"></span><span class="label"><?php echo __( 'Tags', 'artlyris' ); ?></span><span class="line"></span></h6>
+    <h6 class="wp-block-heading is-style-sidebar-tool"><span class="label"><?php echo __( 'Tags', 'artlyris' ); ?></span><span class="line"></span></h6>
     <!-- /wp:heading -->
 
     <!-- wp:post-terms {"term":"post_tag"} /-->
@@ -93,7 +113,7 @@ if ( has_term( '', 'edition') ) {
 <div class="wp-block-group site-component-sidebar-tool">
 
     <!-- wp:heading {"level":6,"className":"is-style-sidebar-tool"} -->
-    <h6 class="wp-block-heading is-style-sidebar-tool"><span class="line"></span><span class="label"><?php echo __( 'Editions', 'artlyris' ); ?></span><span class="line"></span></h6>
+    <h6 class="wp-block-heading is-style-sidebar-tool"><span class="label"><?php echo __( 'Editions', 'artlyris' ); ?></span><span class="line"></span></h6>
     <!-- /wp:heading -->
 
     <!-- wp:group -->
