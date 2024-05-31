@@ -359,8 +359,15 @@
             ]
         },
         {
-            "name": "authorslist",
-            "title": "Autorenliste",
+            "name": "authors-list",
+            "title": "Liste der Autoren",
+            "postTypes": [
+                "page"
+            ]
+        },
+        {
+            "name": "editions-list",
+            "title": "Liste der Editionen",
             "postTypes": [
                 "page"
             ]
