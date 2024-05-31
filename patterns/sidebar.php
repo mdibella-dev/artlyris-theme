@@ -90,7 +90,7 @@ if ( has_term( '', 'edition') ) {
         foreach ( $terms as $term ) {
 
             $pages = get_posts( [
-                'post_type'   => 'page',
+                'post_type'   => 'edition',
                 'numberposts' => 1,
                 'tax_query'   => [
                     [
