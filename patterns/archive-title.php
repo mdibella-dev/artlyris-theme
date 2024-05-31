@@ -32,7 +32,7 @@
         ?></em></p>
         <!-- /wp:paragraph -->
 
-        <!-- wp:query-title {"type":"archive","textAlign":"center","showPrefix":false,"style":{"typography":{"fontStyle":"normal","fontWeight":"200"}},"fontSize":"x-large"} /-->
+        <!-- wp:query-title {"type":"archive","textAlign":"center","showPrefix":false,"style":{"typography":{"fontStyle":"normal","fontWeight":"400"}},"fontSize":"x-large"} /-->
 
     </div>
     <!-- /wp:group -->
