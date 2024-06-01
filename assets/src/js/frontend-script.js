@@ -13,13 +13,47 @@
 
 
 /**
- * setHeaderHeightVar()
+ * setHeightVars()
  */
 
-function setHeaderHeightVar() {
-    let header_height = document.querySelector( '.wp-site-blocks > header' ).getBoundingClientRect().height;
+function setHeightVars() {
+    let header_height           = document.querySelector( '.wp-site-blocks > header' ).getBoundingClientRect().height;
+    let slideout_trigger_height = document.querySelector( '.slideout-trigger-area' ).getBoundingClientRect().height;
 
     document.querySelector( ':root' ).style.setProperty( '--header-height', header_height + 'px' );
+    document.querySelector( ':root' ).style.setProperty( '--slideout-height', slideout_trigger_height + 'px' );
+}
+
+
+/**
+ * doSlideout()
+ *
+ * @param open_or_close true: open; false: close
+ */
+
+function doSlideout( open_or_close ) {
+    const body = document.querySelector( 'body' );
+
+    if ( open_or_close == false ) {
+        anime( {
+            easing: 'easeInOutExpo',
+            duration: 400,
+            targets: '.site-component-slideout',
+            right: '-100%'
+        } );
+
+        body.classList.remove( 'slideout-visible' );
+    } else if ( open_or_close == true ) {
+
+        anime( {
+            easing: 'easeInOutExpo',
+            duration: 400,
+            targets: '.site-component-slideout',
+            right: '0%'
+        } );
+
+        body.classList.add( 'slideout-visible' );
+    }
 }
 
 
@@ -33,8 +67,8 @@ function setHeaderHeightVar() {
  * Fire the setHeaderHeightVar() procedure
  */
 
-document.addEventListener( 'DOMContentLoaded', (event) => { setHeaderHeightVar(); } );
-window.addEventListener( 'resize', (event) => { setHeaderHeightVar(); } );
+document.addEventListener( 'DOMContentLoaded', (event) => { setHeightVars(); } );
+window.addEventListener( 'resize', (event) => { setHeightVars(); } );
 
 
 /**
@@ -67,70 +101,27 @@ document.addEventListener( 'DOMContentLoaded', (event) => {
 
 
 /**
- * Close slideout when window is resized
+ * Close the slideout
  */
 
-window.addEventListener( 'resize', function() {
-    const body = document.querySelector( 'body' );
+// on resize
+window.addEventListener( 'resize', (event) => { doSlideout( false ); } );
 
-    if ( body.classList.contains( 'slideout-visible' ) ) {
-        let timeline = anime.timeline( {
-            easing: 'easeInOutExpo',
-            duration: 400
-        } );
+// on click on trigger
+const trigger_close = document.querySelector( '.slideout-trigger__close' );
 
-        timeline
-        .add( {
-            targets: '.site-component-slideout',
-            right: '-100%'
-        } );
-
-        body.classList.toggle( 'slideout-visible' );
-    }
-        
-} );
+if ( trigger_close != null ) {
+    trigger_close.addEventListener( 'click', (event) => { doSlideout( false ); } );
+}
 
 
 /**
- * Click on hamburger => show/hide slideout
+ * Opens the slideout
  */
 
-const hamburger = document.querySelector( '.site-component-header-navigation__mobile-trigger' );
+// on click on trigger
+const trigger_open = document.querySelector( '.slideout-trigger__open' );
 
-if ( hamburger != null ) {
-    hamburger.addEventListener( 'click', function( e ) {
-        const body = document.querySelector( 'body' );
-
-        // Show slideout
-        if ( ! body.classList.contains( 'slideout-visible' ) ) {
-
-            let timeline = anime.timeline( {
-                easing: 'easeInOutExpo',
-                duration: 400
-            } );
-
-            timeline
-            .add( {
-                targets: '.site-component-slideout',
-                right: '0'
-            } );
-
-        // Hide slideout
-        } else {
-
-            let timeline = anime.timeline( {
-                easing: 'easeInOutExpo',
-                duration: 400
-            } );
-
-            timeline
-            .add( {
-                targets: '.site-component-slideout',
-                right: '-100%'
-            } );
-
-        }
-
-        body.classList.toggle( 'slideout-visible' );
-    } );
+if ( trigger_open != null ) {
+    trigger_open.addEventListener( 'click', (event) => { doSlideout( true ); } );
 }

@@ -13,14 +13,14 @@
     overflow: hidden;
     width: 100%;
     height: 100%;
-    top: 0;
+    top: var(--wp-admin--admin-bar--height);
     right: -100%;
     margin-top: 0;
 }
 
 
 .slideout-content-wrapper {
-    height: 100%;
+    height: calc( 100% - var(--slideout-height) );
     width: 100%;
     position: relative;
     top: 0;
@@ -33,35 +33,81 @@
 
 .slideout-content {
     width: 75%;
-}
-
-
-.site-component-slideout .primary {
-    list-style: none;
-    padding-left: 0;
+    gap: 8rem;
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
+    justify-content: center;
+
+
+    .primary {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .primary__item {
+        width: 100%;
+        text-align: center;
+        font-size: var(--wp--preset--font-size--large);
+    }
+
+    .primary__link {
+        font-family: var(--wp--preset--font-family--open-sans);
+        font-weight: 400;
+        line-height: 1.4;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        &:hover,
+        &:focus {
+            color: var(--wp--preset--color--pale-blue);
+        }
+    }
 }
 
 
-.site-component-slideout .primary__item {
-    width: 100%;
-    text-align: center;
-    font-size: var(--wp--preset--font-size--large);
+/**
+ * .slideout-trigger-area
+ */
+
+.slideout-trigger-area {
+    padding-top: 1rem;
+    padding-right: var(--wp--style--root--padding-right);
+    padding-bottom: 1rem;
+    padding-left: var(--wp--style--root--padding-left);
 }
 
 
-.site-component-slideout .primary__link {
-    font-family: var(--wp--preset--font-family--open-sans);
-    font-weight: 400;
-    line-height: 1.4;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+.slideout-trigger__close {
+    display: block;
+    width: 24px;
 
+    & > svg {
+        width: auto;
+        height: 100%;
+    }
 
     &:hover,
     &:focus {
         color: var(--wp--preset--color--pale-blue);
+    }
+}
+
+
+/**
+ * .slideout-logo
+ */
+
+.slideout-logo {
+    display: block;
+    width: auto;
+    height: 3rem;
+    color: var(--wp--preset--color--pale-blue);
+
+    & > svg {
+        width: auto;
+        height: 100%;
     }
 }
