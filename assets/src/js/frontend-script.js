@@ -30,7 +30,7 @@ function setHeaderHeightVar() {
 
 
 /**
- * Events to fire the setHeaderHeightVar() procedure
+ * Fire the setHeaderHeightVar() procedure
  */
 
 document.addEventListener( 'DOMContentLoaded', (event) => { setHeaderHeightVar(); } );
@@ -38,7 +38,7 @@ window.addEventListener( 'resize', (event) => { setHeaderHeightVar(); } );
 
 
 /**
- * Event to animate edition header
+ * Animate edition header
  */
 
 document.addEventListener( 'DOMContentLoaded', (event) => {
@@ -66,18 +66,39 @@ document.addEventListener( 'DOMContentLoaded', (event) => {
 } );
 
 
+/**
+ * Close slideout when window is resized
+ */
+
+window.addEventListener( 'resize', function() {
+    const body = document.querySelector( 'body' );
+
+    if ( body.classList.contains( 'slideout-visible' ) ) {
+        let timeline = anime.timeline( {
+            easing: 'easeInOutExpo',
+            duration: 400
+        } );
+
+        timeline
+        .add( {
+            targets: '.site-component-slideout',
+            right: '-100%'
+        } );
+    }
+
+    body.classList.toggle( 'slideout-visible' );
+} );
+
 
 /**
- * Events: Click on hamburger => show/hide slideout
+ * Click on hamburger => show/hide slideout
  */
 
 const hamburger = document.querySelector( '.site-component-header-navigation__mobile-trigger' );
 
 if ( hamburger != null ) {
     hamburger.addEventListener( 'click', function( e ) {
-
-        const body           = document.querySelector( 'body' );
-        //const hamburger_icon = document.querySelector( '.is-navbar-hamburger span' );
+        const body = document.querySelector( 'body' );
 
         // Show slideout
         if ( ! body.classList.contains( 'slideout-visible' ) ) {
@@ -89,13 +110,9 @@ if ( hamburger != null ) {
 
             timeline
             .add( {
-                targets: '.wp-block-site-title',
-                opacity: 0
-            } )
-            .add( {
                 targets: '.site-component-slideout',
                 right: '0'
-            }, 100 );
+            } );
 
         // Hide slideout
         } else {
@@ -109,19 +126,10 @@ if ( hamburger != null ) {
             .add( {
                 targets: '.site-component-slideout',
                 right: '-100%'
-            } )
-            .add( {
-
-                targets: '.wp-block-site-title',
-                opacity: 1
-            }, 100 );
+            } );
 
         }
 
-        hamburger_icon.classList.toggle( 'svg-symbol-hamburger' );
-        hamburger_icon.classList.toggle( 'svg-symbol-hamburger-cross' );
         body.classList.toggle( 'slideout-visible' );
-
     } );
-
 }
