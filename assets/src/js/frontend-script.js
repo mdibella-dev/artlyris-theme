@@ -84,9 +84,10 @@ window.addEventListener( 'resize', function() {
             targets: '.site-component-slideout',
             right: '-100%'
         } );
-    }
 
-    body.classList.toggle( 'slideout-visible' );
+        body.classList.toggle( 'slideout-visible' );
+    }
+        
 } );
 
 
