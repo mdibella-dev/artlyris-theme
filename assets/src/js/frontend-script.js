@@ -38,7 +38,7 @@ window.addEventListener( 'resize', (event) => { setHeaderHeightVar(); } );
 
 
 /**
- * Events to animate edition header
+ * Event to animate edition header
  */
 
 document.addEventListener( 'DOMContentLoaded', (event) => {
@@ -64,3 +64,64 @@ document.addEventListener( 'DOMContentLoaded', (event) => {
     } );
 
 } );
+
+
+
+/**
+ * Events: Click on hamburger => show/hide slideout
+ */
+
+const hamburger = document.querySelector( '.site-component-header-navigation__mobile-trigger' );
+
+if ( hamburger != null ) {
+    hamburger.addEventListener( 'click', function( e ) {
+
+        const body           = document.querySelector( 'body' );
+        //const hamburger_icon = document.querySelector( '.is-navbar-hamburger span' );
+
+        // Show slideout
+        if ( ! body.classList.contains( 'slideout-visible' ) ) {
+
+            let timeline = anime.timeline( {
+                easing: 'easeInOutExpo',
+                duration: 400
+            } );
+
+            timeline
+            .add( {
+                targets: '.wp-block-site-title',
+                opacity: 0
+            } )
+            .add( {
+                targets: '.site-component-slideout',
+                right: '0'
+            }, 100 );
+
+        // Hide slideout
+        } else {
+
+            let timeline = anime.timeline( {
+                easing: 'easeInOutExpo',
+                duration: 400
+            } );
+
+            timeline
+            .add( {
+                targets: '.site-component-slideout',
+                right: '-100%'
+            } )
+            .add( {
+
+                targets: '.wp-block-site-title',
+                opacity: 1
+            }, 100 );
+
+        }
+
+        hamburger_icon.classList.toggle( 'svg-symbol-hamburger' );
+        hamburger_icon.classList.toggle( 'svg-symbol-hamburger-cross' );
+        body.classList.toggle( 'slideout-visible' );
+
+    } );
+
+}

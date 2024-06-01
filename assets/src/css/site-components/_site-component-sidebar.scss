@@ -7,6 +7,15 @@
 
 
 
+.site-component-sidebar {
+    gap: 3rem;
+
+    @include on_breakpoint(medium) {
+        gap: 4rem;
+    }
+}
+
+
 .site-component-sidebar-tool {
     font-family: var(--wp--preset--font-family--open-sans);
     font-size: .7rem;

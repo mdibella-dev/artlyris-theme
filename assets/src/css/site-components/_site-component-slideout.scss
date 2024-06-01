@@ -1,0 +1,67 @@
+/**
+ * Site component: slideout (main menue which slides out when hamburger button is clicked)
+ *
+ * @author  Marco Di Bella
+ * @package ARTlyris
+ */
+
+
+.site-component-slideout {
+    position: fixed;
+    z-index: 2000;
+    background: var(--wp--preset--color--dark-blue);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    margin-top: 0;
+}
+
+
+.slideout-content-wrapper {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    right: 0;
+    padding: 0 1rem;
+    overflow: auto;
+    scrollbar-color: var(--wp--preset--color--white) transparent;
+}
+
+
+.slideout-content {
+    width: 75%;
+}
+
+
+.site-component-slideout .primary {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+
+.site-component-slideout .primary__item {
+    width: 100%;
+    text-align: center;
+    font-size: var(--wp--preset--font-size--large);
+}
+
+
+.site-component-slideout .primary__link {
+    font-family: var(--wp--preset--font-family--open-sans);
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+
+    &:hover,
+    &:focus {
+        color: var(--wp--preset--color--pale-blue);
+    }
+}

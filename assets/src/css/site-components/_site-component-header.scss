@@ -13,14 +13,9 @@
 
 .site-component-header-navigation__desktop {
     display: none;
-    flex-wrap: nowrap;
-    align-items: center;
-    gap: 1.5rem;
-    list-style: none;
-    padding-left: 0;
 
     @include on_breakpoint(medium) {
-        display: flex;
+        display: block;
     }
 }
 
@@ -35,12 +30,22 @@
 }
 
 
-.site-component-header-navigation__desktop-item {
+.site-component-header-navigation__desktop .primary {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    gap: 1.5rem;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+
+.site-component-header-navigation__desktop .primary__item {
     line-height: 0;
 }
 
 
-.site-component-header-navigation__desktop-link {
+.site-component-header-navigation__desktop .primary__link {
     font-family: var(--wp--preset--font-family--open-sans);
     font-size: 65%;
     font-weight: 600;
