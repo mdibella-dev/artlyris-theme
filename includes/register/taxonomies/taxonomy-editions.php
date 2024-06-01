@@ -52,7 +52,7 @@ function register() {
         'show_in_graphql'       => false,
     ];
 
-    register_taxonomy( 'edition', ['post','page','edition'], $args );
+    register_taxonomy( 'edition', ['post','edition'], $args );
 }
 
 add_action( 'init', __NAMESPACE__ . '\register' );
