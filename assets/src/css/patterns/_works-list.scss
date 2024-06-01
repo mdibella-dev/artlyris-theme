@@ -1,0 +1,38 @@
+/**
+ * Pattern: artlyris-theme/works-list
+ *
+ * @author  Marco Di Bella
+ * @package ARTlyris
+ */
+
+
+
+.works-list {
+    column-gap: 40px;
+
+    @include on_breakpoint(small) {
+        column-count: 2;
+    }
+
+    @include on_breakpoint(medium) {
+        column-count: 3;
+    }
+}
+
+
+.works-list__letter-block {
+    display: inline-block;
+    width: 100%;
+    margin-block-start: 0;
+    margin-bottom: 4rem;
+}
+
+
+.works-list__item {
+    font-weight: 400;
+    font-family: var(--wp--preset--font-family--open-sans);
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 1rem;
+}
