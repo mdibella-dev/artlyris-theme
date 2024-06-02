@@ -6,8 +6,8 @@
  */
 ?>
 
-<!-- wp:group {"align":"full","layout":{"type":"flex","orientation":"vertical","justifyContent":"left"},"className":"authors-list"} -->
-<div class="wp-block-group alignfull authors-list">
+<!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"left"},"className":"authors-list"} -->
+<div class="wp-block-group authors-list">
 
     <?php
     $args = [

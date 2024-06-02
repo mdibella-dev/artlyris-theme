@@ -6,8 +6,8 @@
  */
 ?>
 
-<!-- wp:group {"align":"full","className":"works-list"} -->
-<div class="wp-block-group alignfull works-list">
+<!-- wp:group {"className":"works-list"} -->
+<div class="wp-block-group works-list">
 
     <?php
     global $wpdb;
