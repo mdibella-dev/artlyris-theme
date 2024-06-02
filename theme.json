@@ -1,6 +1,6 @@
 {
     "$schema": "https://schemas.wp.org/trunk/theme.json",
-    "version": 3,
+    "version": 2,
     "settings": {
         "color": {
             "palette": [
@@ -68,8 +68,9 @@
             "customDuotone": false
         },
         "layout": {
-            "contentSize": "1300px"
+            "contentSize": "1200px"
         },
+        "useRootPaddingAwareAlignments": true,
         "spacing": {
             "margin": true,
             "padding": true,
@@ -110,7 +111,6 @@
                 }
             ]
         },
-        "useRootPaddingAwareAlignments": true,
         "typography": {
             "fluid": true,
             "fontFamilies": [
@@ -373,6 +373,13 @@
         {
             "name": "works-list",
             "title": "Liste aller Werke",
+            "postTypes": [
+                "page"
+            ]
+        },
+        {
+            "name": "home-page",
+            "title": "Home",
             "postTypes": [
                 "page"
             ]
