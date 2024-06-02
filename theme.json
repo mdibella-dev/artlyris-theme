@@ -201,11 +201,6 @@
             ],
             "fontSizes": [
                 {
-                    "size": "0.7rem",
-                    "slug": "x-small",
-                    "name": "XS"
-                },
-                {
                     "size": "0.875rem",
                     "fluid": {
                         "min": "0.875rem",
