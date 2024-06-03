@@ -29,4 +29,4 @@ See [CHANGELOG.md](https://github.com/mdibella-dev/artlyris/blob/main/CHANGELOG.
 
 ## License
 
-This package ist released under the **MIT License**. See [LICENSE.md](https://github.com/mdibella-dev/theme-template/blob/main/LICENSE.md) for further details.
+This package ist released under the **MIT License**. See [LICENSE.md](https://github.com/mdibella-dev/artlyris/blob/main/LICENSE.md) for further details.
