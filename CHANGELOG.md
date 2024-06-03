@@ -10,10 +10,7 @@ None
 
 <br>
 
-### RELEASE VERSION
+### 1.0.0
+Released: 02-06-2024
 
-Released: RELEASE DATE (dd-mm-yyyy)
-
--   New:
--   Improve:
--   Bugfix:
+- Initial commit
