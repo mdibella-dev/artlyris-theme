@@ -24,9 +24,3 @@ gutenberg, block-editor, full-site-editing, translation-ready, responsive, sideb
 ## Changelog
 
 See [CHANGELOG.md](https://github.com/mdibella-dev/artlyris/blob/main/CHANGELOG.md).
-
-<br>
-
-## License
-
-This package ist released under the **MIT License**. See [LICENSE.md](https://github.com/mdibella-dev/theme-template/blob/main/LICENSE.md) for further details.
