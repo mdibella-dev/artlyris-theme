@@ -6,7 +6,7 @@ _New / Improve / Bugfix_
 
 ### Latest changes to the main branch
 
-None
+- Improve: Add visual feedback to post-featured-image links
 
 <br>
 
