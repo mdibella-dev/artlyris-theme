@@ -32,7 +32,7 @@ function post_thumbnail_fallback_html( $html, $post_id, $post_thumbnail_id, $siz
 
         $html = sprintf(
             '<img class="%1$s" width="%2$s" height="%3$s" src="%4$s" alt="%5$s" style="%6$s">',
-            implode( ' ', ['wp-post-image', 'size' . $size] ),
+            implode( ' ', ['wp-post-image', 'size-' . $size] ),
             '450',
             '300',
             $path,
