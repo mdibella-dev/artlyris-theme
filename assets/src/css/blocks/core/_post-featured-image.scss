@@ -8,12 +8,11 @@
 
 
 .wp-block-post-featured-image a img {
-    //filter: grayscale(1);
-    //filter: sepia(100%) hue-rotate(-10deg);
-    transition: all .3s;
+    transition: all .3s ease-in-out;
 
     &:hover,
     &:focus {
-        filter: initial;
+        transform: scale(.95);
+        filter: brightness(.7);
     }
 }
