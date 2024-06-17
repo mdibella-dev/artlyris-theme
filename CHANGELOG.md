@@ -6,7 +6,8 @@ _New / Improve / Bugfix_
 
 ### Latest changes to the main branch
 
-- Improve: Add visual feedback to post-featured-image links
+- Add visual feedback to post-featured-image links
+- Fix the incorrect concatenation of class identifiers in thumbnail-fallback.php 
 
 <br>
 
