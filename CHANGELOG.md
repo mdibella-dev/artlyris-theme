@@ -6,6 +6,8 @@ _New / Improve / Bugfix_
 
 ### Latest changes to the main branch
 
+- Fix issue #5, #6
+
 <br>
 
 ### 1.1.0
