@@ -48,39 +48,67 @@ add_action( 'after_setup_theme', __NAMESPACE__ . '\theme_setup' );
 function theme_scripts() {
 
     /**
-     * Registers and loads vendor styles and scripts.
-     */
-
-    wp_enqueue_script(
-        'anime',
-        THEME_URI . 'assets/build/vendors/anime/anime.min.js',
-        [],
-        false,
-        [
-            'in_footer' => true,
-            'strategy'  => 'async'
-        ]
-    );
-
-
-    /**
      * Registers and loads the theme's own scripts.
      */
 
-    //$filename = 'assets/build/js/frontend-script.min.js';
-    $filename = 'assets/src/js/frontend-script.js';
-
-    if ( file_exists( THEME_DIR . $filename ) ) {
-
-        wp_enqueue_script(
-            'artlyris-frontend-script',
-            THEME_URI . $filename,
-            [
+    $scripts = [
+        'anime' => [
+            'path'    => 'assets/build/vendors/anime/anime.min.js',
+            'deps'    => [],
+            'version' => false,
+            'args'    => [
+                'in_footer' => true,
+                'strategy'  => 'async'
+            ]
+        ],
+        'artlyris-frontend-script' => [
+            'path'    => /*'assets/build/js/frontend-script.min.js'*/ 'assets/src/js/frontend-script.js',
+            'deps'    => [
                 'anime'
             ],
-            THEME_VERSION . '.' . filemtime( THEME_DIR . $filename ),
-            true
-        );
+            'version' => '',
+            'args'    => [
+                'in_footer' => true,
+                'strategy'  => 'async'
+            ]
+        ],
+        'artlyris-custom-cursor-script' => [
+            'path'    => /*'assets/build/js/custom-cursor-script.min.js'*/ 'assets/src/js/custom-cursor-script.js',
+            'deps'    => [],
+            'version' => '',
+            'args'    => [
+                'in_footer' => true,
+                'strategy'  => 'async'
+            ]
+        ]
+    ];
+
+    // Register (and enqueue) all scripts in the given order
+    foreach ( $scripts as $handle => $setup ) {
+
+        if ( file_exists( THEME_DIR . $setup['path'] ) ) {
+
+            $version = '';
+
+            if ( is_string( $setup['version'] ) ) {
+                $version = ( empty( $setup['version'] ) )? THEME_VERSION . '.' . filemtime( THEME_DIR . $setup['path'] ) : $setup['version'];
+            }  else if ( is_bool( $setup['version'] ) && ( false === $setup['version'] ) ) {
+                $version = false;
+            } else {
+                $version = null;
+            }
+
+            wp_register_script(
+                $handle,
+                THEME_URI . $setup['path'],
+                $setup['deps'],
+                $version,
+                $setup['args'],
+            );
+
+            wp_enqueue_script( $handle );
+        }
+
     }
 
 
@@ -88,42 +116,49 @@ function theme_scripts() {
      * Registers and loads the theme's own styles.
      *
      * Note: The style.css in the main directory is only used for theme identification and versioning.
-     * Actually the (compressed) style information can be found in frontend(.min).css.
+     * Actually the (compressed) style information can be found in frontend-style(.min).css.
      */
 
-    $filename = 'assets/build/css/frontend-style.min.css';
-
-    if ( file_exists( THEME_DIR . $filename ) ) {
-
-        wp_enqueue_style(
-            'artlyris-frontend-style',
-            THEME_URI . $filename,
-            [],
-            THEME_VERSION . '.' . filemtime( THEME_DIR . $filename ),
-        );
-    }
-
-
-    wp_enqueue_style(
-        'custom-cursor-style',
-        THEME_URI . 'assets/build/css/custom-cursor-style.min.css',
-        [],
-        THEME_VERSION
-    );
-
-
-    wp_enqueue_script(
-        'custom-cursor-script',
-        THEME_URI . 'assets/src/js/custom-cursor-script.js',
-        [],
-        THEME_VERSION,
-        [
-            'in_footer' => true,
-            'strategy'  => 'async'
+    $styles = [
+        'artlyris-frontend-style' => [
+            'path'    => 'assets/build/css/frontend-style.min.css',
+            'deps'    => [],
+            'version' => ''
+        ],
+        'artlyris-custom-cursor-style' => [
+            'path'    => 'assets/build/css/custom-cursor-style.min.css',
+            'deps'    => [],
+            'version' => ''
         ]
-    );
+    ];
 
 
+    // Register (and enqueue) all styles in the given order
+    foreach ( $styles as $handle => $setup ) {
+
+        if ( file_exists( THEME_DIR . $setup['path'] ) ) {
+
+            $version = '';
+
+            if ( is_string( $setup['version'] ) ) {
+                $version = ( empty( $setup['version'] ) )? THEME_VERSION . '.' . filemtime( THEME_DIR . $setup['path'] ) : $setup['version'];
+            }  else if ( is_bool( $setup['version'] ) && ( false === $setup['version'] ) ) {
+                $version = false;
+            } else {
+                $version = null;
+            }
+
+            wp_register_style(
+                $handle,
+                THEME_URI . $setup['path'],
+                $setup['deps'],
+                $version
+            );
+
+            wp_enqueue_style( $handle );
+        }
+
+    }
 
 }
 
