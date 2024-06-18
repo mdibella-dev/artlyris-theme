@@ -92,7 +92,7 @@ function theme_scripts() {
 
             if ( is_string( $setup['version'] ) ) {
                 $version = ( empty( $setup['version'] ) )? THEME_VERSION . '.' . filemtime( THEME_DIR . $setup['path'] ) : $setup['version'];
-            }  else if ( is_bool( $setup['version'] ) && ( false === $setup['version'] ) ) {
+            }  else if ( is_bool( $setup['version'] ) and ( false === $setup['version'] ) ) {
                 $version = false;
             } else {
                 $version = null;
