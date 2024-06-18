@@ -9,7 +9,7 @@
 
 
 * {
-//    cursor: none;
+    cursor: none;
 }
 
 
@@ -23,12 +23,13 @@
     transition: width .3s, height .3s, opacity .3s;
     transform: translate(-50%, -50%);
     border-radius: 100%;
-    background-color: var(--wp--preset--color--brown);
-    opacity: .95;
+    background-color: var(--wp--preset--color--dark-blue);
+    opacity: .85;
 
     &.hover {
-        width: 50px;
-        height: 50px;
+        width: 80px;
+        height: 80px;
         opacity: .5;
+        background-color: var(--wp--preset--color--brown);
     }
 }
