@@ -9,13 +9,14 @@
 
 
 .wp-site-blocks * {
-    cursor: none;
+    //cursor: none;
 }
 
 
 .cursor {
     pointer-events: none;
     position: fixed;
+    z-index: 8000;
     left: 0;
     top: 0;
     width: 20px;
@@ -31,5 +32,14 @@
         height: 80px;
         opacity: .3;
         background-color: var(--wp--preset--color--brown);
+    }
+}
+
+
+body.slideout-visible .cursor {
+    background-color: var(--wp--preset--color--white);
+
+    &.hover {
+        background-color: var(--wp--preset--color--white);
     }
 }
