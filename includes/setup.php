@@ -102,6 +102,29 @@ function theme_scripts() {
             THEME_VERSION . '.' . filemtime( THEME_DIR . $filename ),
         );
     }
+
+
+    wp_enqueue_style(
+        'custom-cursor-style',
+        THEME_URI . 'assets/build/css/custom-cursor-style.min.css',
+        [],
+        THEME_VERSION
+    );
+
+
+    wp_enqueue_script(
+        'custom-cursor-script',
+        THEME_URI . 'assets/src/js/custom-cursor-script.js',
+        [],
+        THEME_VERSION,
+        [
+            'in_footer' => true,
+            'strategy'  => 'async'
+        ]
+    );
+
+
+
 }
 
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\theme_scripts', 9999 );
