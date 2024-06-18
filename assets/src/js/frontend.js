@@ -67,7 +67,7 @@ function doSlideout( open_or_close ) {
  * Fire the setHeaderHeightVar() procedure
  */
 
-document.addEventListener( 'DOMContentLoaded', (event) => { setHeightVars(); } );
+document.addEventListener( 'readystatechange', (event) => { setHeightVars(); } );
 window.addEventListener( 'resize', (event) => { setHeightVars(); } );
 
 
@@ -75,7 +75,7 @@ window.addEventListener( 'resize', (event) => { setHeightVars(); } );
  * Animate edition header
  */
 
- document.addEventListener( 'readystatechange', (event) => {
+document.addEventListener( 'readystatechange', (event) => {
     if ( event.target.readyState === 'complete' ) {
 
         const edition_images = document.querySelectorAll( '.edition-image--animate-fade-in' );

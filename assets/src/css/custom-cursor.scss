@@ -8,7 +8,7 @@
  */
 
 
-* {
+.wp-site-blocks * {
     cursor: none;
 }
 
@@ -29,7 +29,7 @@
     &.hover {
         width: 80px;
         height: 80px;
-        opacity: .5;
+        opacity: .3;
         background-color: var(--wp--preset--color--brown);
     }
 }

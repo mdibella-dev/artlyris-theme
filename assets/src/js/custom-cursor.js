@@ -8,44 +8,31 @@
  */
 
 
-document.addEventListener( 'DOMContentLoaded', (event) => {
+document.addEventListener( 'readystatechange', (event) => {
+    if ( event.target.readyState === 'complete' ) {
 
-/*    const body = document.querySelector( 'body' );
+        // Create Cursor
+        const cursor = document.createElement( 'div' );
 
-    if ( ! body.classList.contains( 'block-editor-page' ) ) {
-*/
-    // Create Cursor
-    const cursor = document.createElement( 'div' );
-
-    cursor.classList.add( 'cursor' );
-    document.body.appendChild( cursor );
-    
+        cursor.classList.add( 'cursor' );
+        document.body.appendChild( cursor );
 
 
-    document.addEventListener( 'mousemove', function( event ) {
-        var x = event.clientX;
-        var y = event.clientY;
+        document.addEventListener( 'mousemove', function( event ) {
+            var x = event.clientX;
+            var y = event.clientY;
 
-        cursor.style.left = x + 'px';
-        cursor.style.top = y + 'px';
-    } );
-
-/*
-    document.addEventListener( 'mousedown', function() {
-        cursor.classList.add( 'hover' )
-    } );
+            cursor.style.left = x + 'px';
+            cursor.style.top = y + 'px';
+        } );
 
 
-    document.addEventListener( 'mouseup', function() {
-        cursor.classList.remove( 'hover' )
-    } );
-*/
+        var a = document.querySelectorAll( '.wp-site-blocks a' );
 
-    var a = document.querySelectorAll( 'a' );
-
-    a.forEach( item => {
-        item.addEventListener( 'mouseover', () => { cursor.classList.add( 'hover' ); } );
-        item.addEventListener( 'mouseleave', () => { cursor.classList.remove( 'hover' ); } );
-    } );
+        a.forEach( item => {
+            item.addEventListener( 'mouseover', () => { cursor.classList.add( 'hover' ); } );
+            item.addEventListener( 'mouseleave', () => { cursor.classList.remove( 'hover' ); } );
+        } );
+    }
 
 } );
