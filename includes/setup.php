@@ -121,12 +121,12 @@ function theme_scripts() {
 
     $styles = [
         'artlyris-frontend-style' => [
-            'path'    => 'assets/build/css/frontend-style.min.css',
+            'path'    => 'assets/build/css/frontend.min.css',
             'deps'    => [],
             'version' => ''
         ],
         'artlyris-custom-cursor-style' => [
-            'path'    => 'assets/build/css/custom-cursor-style.min.css',
+            'path'    => 'assets/build/css/custom-cursor.min.css',
             'deps'    => [],
             'version' => ''
         ]
