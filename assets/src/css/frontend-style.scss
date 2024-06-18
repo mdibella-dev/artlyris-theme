@@ -9,27 +9,26 @@
 
 /** Mixins */
 
-@import "mixins/_responsive";
+@import "frontend/mixins/_responsive";
 
 
 /** Basic framework */
 
-@import "site/_basics";
-@import "site/_wordpress";
-@import "site/_edition";
-@import "site/_custom-cursor";
+@import "frontend/site/_basics";
+@import "frontend/site/_wordpress";
+@import "frontend/site/_edition";
 
 
 /** Main components */
 
-@import "site-components/_index";
+@import "frontend/site-components/_index";
 
 
 /** Block elements */
 
-@import "blocks/_index";
+@import "frontend/blocks/_index";
 
 
 /** Patterns */
 
-@import "patterns/_index";
+@import "frontend/patterns/_index";
