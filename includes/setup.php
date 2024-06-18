@@ -62,7 +62,7 @@ function theme_scripts() {
             ]
         ],
         'artlyris-frontend-script' => [
-            'path'    => /*'assets/build/js/frontend-script.min.js'*/ 'assets/src/js/frontend-script.js',
+            'path'    => /*'assets/build/js/frontend.min.js'*/ 'assets/src/js/frontend.js',
             'deps'    => [
                 'anime'
             ],
@@ -73,7 +73,7 @@ function theme_scripts() {
             ]
         ],
         'artlyris-custom-cursor-script' => [
-            'path'    => /*'assets/build/js/custom-cursor-script.min.js'*/ 'assets/src/js/custom-cursor-script.js',
+            'path'    => /*'assets/build/js/custom-cursor.min.js'*/ 'assets/src/js/custom-cursor.js',
             'deps'    => [],
             'version' => '',
             'args'    => [
