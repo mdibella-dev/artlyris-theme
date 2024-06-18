@@ -6,7 +6,8 @@
         "SASS_BLD": "./assets/build/css"
     },
     "scripts": {
-        "sass:front": "sass --style=compressed --no-source-map $npm_package_config_SASS_SRC/frontend-style.scss $npm_package_config_SASS_BLD/frontend-style.min.css"
+        "sass:frontend": "sass --style=compressed --no-source-map $npm_package_config_SASS_SRC/frontend-style.scss $npm_package_config_SASS_BLD/frontend-style.min.css",
+        "sass:cursor": "sass --style=compressed --no-source-map $npm_package_config_SASS_SRC/custom-cursor-style.scss $npm_package_config_SASS_BLD/custom-cursor-style.min.css"
     },
     "devDependecies": {
         "sass": "^1.59.3"
