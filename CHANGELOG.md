@@ -6,8 +6,9 @@ _New / Improve / Bugfix_
 
 ### Latest changes to the main branch
 
-- Add a new procedure for registering and enqueuing scripts and styles 
+- Add a new procedure for registering and enqueuing scripts and styles
 - Fix issue #5, #6
+- Fix wrongful calculation of slideout top 
 
 <br>
 
