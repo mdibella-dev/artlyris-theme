@@ -9,11 +9,12 @@ WordPress theme for the ARTlyris website.
 [Marco Di Bella ](https://github.com/mdibella-dev/)
 
 ### Tags
-gutenberg, block-editor, full-site-editing, translation-ready, responsive, sidebar, patterns
+gutenberg, block-editor, full-site-editing, translation-ready, responsive, sidebar, patterns, javascript, custom-cursor
 
 ### Requires at least
 
 * WordPress 6
+* mobble plugin by Scott Evans; [Link](https://wordpress.org/plugins/mobble/)
 
 ### Tested up to
 
