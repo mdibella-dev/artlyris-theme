@@ -6,6 +6,8 @@ _New / Improve / Bugfix_
 
 ### Latest changes to the main branch
 
+- Fix margin-bottom at query-pagination links
+
 <br>
 
 ### 1.1.1
