@@ -18,7 +18,7 @@ defined( 'ABSPATH' ) or exit;
 /**
  * Performs basic settings for the theme.
  *
- * @since  1.0.0
+ * @since 1.0.0
  */
 
 function theme_setup() {
