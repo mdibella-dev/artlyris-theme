@@ -138,9 +138,7 @@ function theme_scripts() {
                 }
             }
         }
-
     }
-
 }
 
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\theme_scripts', 9999 );
