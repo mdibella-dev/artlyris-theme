@@ -23,8 +23,7 @@ defined( 'ABSPATH' ) or exit;
 
 function register_block_styles() {
 
-    $filename = 'assets/src/js/block-styles.js';
-    //$filename = 'assets/build/js/block-styles.min.js';
+    $filename = 'assets/build/js/block-styles.min.js';
 
     wp_enqueue_script(
         'mdb-block-styles',
