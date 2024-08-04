@@ -18,7 +18,7 @@ gutenberg, block-editor, full-site-editing, translation-ready, responsive, sideb
 
 ### Tested up to
 
-* WordPress 6.5
+* WordPress 6.6
 
 <br>
 

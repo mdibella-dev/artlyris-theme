@@ -6,9 +6,15 @@ _New / Improve / Bugfix_
 
 ### Latest changes to the main branch
 
+<br>
+
+### 1.1.2
+Released: 04-08-2024
+
+- Improve the script/style registration procedure
+- Minify all JS files
 - Fix margin-bottom at query-pagination links
 
-<br>
 
 ### 1.1.1
 Released: 19-06-2024
