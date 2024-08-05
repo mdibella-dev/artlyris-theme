@@ -47,7 +47,7 @@ add_action( 'after_setup_theme', __NAMESPACE__ . '\theme_setup' );
 
 function theme_scripts() {
 
-    $collection = [
+    $files = [
         'scripts' => [
             'anime' => [
                 'path'    => 'assets/build/vendors/anime/anime.min.js',
@@ -93,10 +93,10 @@ function theme_scripts() {
         ]
     ];
 
-    foreach ( $collection as $category => $files ) {
+    foreach ( $files as $category => $file ) {
 
         // Register (and enqueue) all scripts/styles in the given order
-        foreach ( $files as $handle => $setup ) {
+        foreach ( $file as $handle => $setup ) {
 
             if ( file_exists( THEME_DIR . $setup['path'] ) ) {
 
