@@ -1,16 +1,9 @@
 <?php
-/**
- * Main functions for setting up the theme.
- *
- * @author  Marco Di Bella
- * @package ARTlyris
- */
-
 namespace artlyris;
 
 
-/** Prevent direct access */
 
+/** Prevent direct access */
 defined( 'ABSPATH' ) or exit;
 
 
@@ -18,17 +11,18 @@ defined( 'ABSPATH' ) or exit;
 /**
  * Performs basic settings for the theme.
  *
- * @since 1.0.0
+ * @since   1.0.0
+ *
+ * @param   void
+ *
+ * @return  void
  */
-
 function theme_setup() {
     // Enables internationalization.
     load_theme_textdomain( 'artlyris', THEME_DIR . 'languages' );
 
-
     // Enables responsive embedding of media embeds.
     add_theme_support( 'responsive-embeds' );
-
 
     // Adds editor styles.
     add_theme_support( 'editor-styles' );
@@ -42,9 +36,12 @@ add_action( 'after_setup_theme', __NAMESPACE__ . '\theme_setup' );
 /**
  * Loads a set of necessary JS scripts and stylesheets.
  *
- * @since  1.0.0
+ * @since   1.0.0
+ *
+ * @param   void
+ *
+ * @return  void
  */
-
 function theme_scripts() {
 
     $files = [

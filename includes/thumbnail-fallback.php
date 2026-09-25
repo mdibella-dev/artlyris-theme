@@ -1,16 +1,9 @@
 <?php
-/**
- * Function to return a fallback image (a placeholder) for posts without a thumbnail.
- *
- * @author  Marco Di Bella
- * @package ARTlyris
- */
-
 namespace artlyris;
 
 
-/** Prevent direct access */
 
+/** Prevent direct access */
 defined( 'ABSPATH' ) or exit;
 
 
@@ -18,10 +11,18 @@ defined( 'ABSPATH' ) or exit;
 /**
  * Returns a HTML code for the fallback image if no thumbnail is present.
  *
- * @since 1.0.0
- * @see   https://developer.wordpress.org/reference/hooks/post_thumbnail_html/
+ * @see     https://developer.wordpress.org/reference/hooks/post_thumbnail_html/
+ *
+ * @since   1.0.0
+ *
+ * @param   string $html           The post thumbnail HTML.
+ * @param   int $post_id           The post ID.
+ * @param   int $post_thumbnail_id The post thumbnail ID, or 0 if there isn’t one.
+ * @param   string|array $size     Requested image size. Can be any registered image size name, or an array of width and height values in pixels (in that order).
+ * @param   array $attr            Query string or array of attributes.
+ *
+ * @return  string
  */
-
 function post_thumbnail_fallback_html( $html, $post_id, $post_thumbnail_id, $size, $attr ) {
 
     if ( empty( $html ) ) {
@@ -43,6 +44,5 @@ function post_thumbnail_fallback_html( $html, $post_id, $post_thumbnail_id, $siz
 
     return $html;
 }
-
 
 add_filter( 'post_thumbnail_html', __NAMESPACE__ . '\post_thumbnail_fallback_html', 20, 5 );
