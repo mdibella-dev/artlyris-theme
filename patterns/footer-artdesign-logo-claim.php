@@ -6,7 +6,6 @@
  */
 ?>
 
-
 <!-- wp:group {"className":"site-component-footer-artdesign","layout":{"type":"flex","orientation":"horizontal","justifyContent":"center"}} -->
 <div class="wp-block-group site-component-footer-artdesign">
 

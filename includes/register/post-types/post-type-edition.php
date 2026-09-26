@@ -1,16 +1,9 @@
 <?php
-/**
- * Custom post type: edition.
- *
- * @author  Marco Di Bella
- * @package ARTlyris
- */
-
 namespace artlyris\post_types\edition;
 
 
-/** Prevent direct access */
 
+/** Prevent direct access */
 defined( 'ABSPATH' ) or exit;
 
 
@@ -18,9 +11,12 @@ defined( 'ABSPATH' ) or exit;
 /**
  * Registers the custom post type.
  *
- * @since 1.0.0
+ * @since   1.0.0
+ *
+ * @param   void
+ *
+ * @return  void
  */
-
 function register() {
 
     $labels = [
